@@ -62,6 +62,18 @@
       cursor: pointer;
     }
   }
+
+  .mobileNavButton {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
+  }
+
+  .showMobileNav, .hideMobileNav {
+    display: none;
+  }
 }
 
 .delayedAnimation {
@@ -75,5 +87,73 @@
   from {
     opacity: 0;
     transform: translateY(-60px);
+  }
+}
+
+@media (max-width: 700px) {
+  .navBar {
+    position: fixed;
+
+    .showNav {
+      display: none;
+    }
+
+    .mobileNav, .showMobileNav, .hideMobileNav, .mobileNavButton {
+      display: block;
+    }
+  
+    .mobileNavButton {
+      color: white;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      font-size: 2rem;
+      z-index: 6;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    .mobileNav {
+      position: fixed;
+      background-color: darken($accent-color, 50%);
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      ul {
+        background-color: transparent;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 100;
+        font-family: $sen-font;
+      }
+
+      &.showMobileNav {
+        animation: from-right 500ms ease forwards;
+      }
+      &.hideMobileNav {
+        animation: to-right 500ms ease forwards;
+      }
+
+      @keyframes from-right {
+        from {
+          transform: translateX(100vw);
+        }
+      }
+      @keyframes to-right {
+        to {
+          transform: translateX(100vw);
+        }
+      }
+    }
   }
 }

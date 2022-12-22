@@ -34,7 +34,7 @@ export default function Contact() {
               <p>Both will work.</p>
               <p>I'll get back to you as soon as I can.</p>
             </div>
-            <form className={styles.form} action="https://formsubmit.co/d069f9b37767623e25063b9e10c29f64" method='POST'>
+            <form className={styles.form} action="https://formsubmit.co/y.vyas.likhit@gmail.com" method='POST'>
               <input type="text" name="name" id="name" placeholder='Name' required/>
               <input type="email" name="email" id="email" placeholder='Email' required/>
               <textarea type="text" name="message" id="message" placeholder='Message' required/>

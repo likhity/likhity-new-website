@@ -91,6 +91,47 @@ $typing-delay: 500ms;
   }
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    list-style-type: none;
+
+    .skill {
+      $size: 350px;
+      width: $size;
+      height: $size;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: 100;
+      font-size: 4rem;
+      cursor: default;
+      transition: border-color 250ms ease;
+
+      &:hover {
+        border: 1px solid $accent-color;
+      }
+
+      p {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
 .education {
   li {
     font-size: 1.25rem;

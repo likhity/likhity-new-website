@@ -78,6 +78,9 @@ code {
       width: 1em;
       margin-left: -1em;
     }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 

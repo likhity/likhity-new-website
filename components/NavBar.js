@@ -13,8 +13,8 @@ export default function NavBar() {
       <ul className={toggleNav ? "showNav" : 'hideNav'}>
         <li><a href="/about">About Me</a></li>
         <li><a href="/projects">Projects</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="" className="resume">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/resume" className="resume">Resume</a></li>
       </ul>
       <div className="navToggle" onClick={() => setToggleNav(!toggleNav)}>
         {

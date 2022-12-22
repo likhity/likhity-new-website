@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+.alerts {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  .alert {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: darken($accent-color, 50%);
+    border-radius: 10px;
+    padding: 1rem;
+    animation: fade-out 1s linear 4s forwards;
+    svg {
+      font-size: 1.5rem;
+      margin-right: 1.25rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin: 0;
+      max-width: 350px;
+      margin-right: 1rem;
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: white;
+      &:hover {
+        color: #000;
+      }
+      svg {
+        margin: 0;
+      }
+    }
+
+    @keyframes fade-out {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}

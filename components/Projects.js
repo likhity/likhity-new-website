@@ -2,8 +2,14 @@ import styles from "../styles/Projects.module.scss";
 
 import { FiExternalLink, FiDownload } from "react-icons/fi";
 import { VscGithubAlt } from "react-icons/vsc";
+import { useAlertsAdd } from "../contexts/AlertsContext";
+
+import { v4 as uuid } from "uuid";
 
 export default function Projects({ projects }) {
+
+  const addAlert = useAlertsAdd();
+
   return (
     <ul className={styles.projects}>
       {
@@ -11,7 +17,13 @@ export default function Projects({ projects }) {
           <li key={project.link} href={project.link} className={styles.project}>
             <div className={styles.icons}>
               {
-                project.github && <a className={styles.icon} href={project.github} target="_blank" rel="noopener noreferrer"><VscGithubAlt /></a>
+                project.github ?
+                project.github === "ask me" ?
+                <a className={styles.icon} onClick={() => { 
+                  addAlert("I cannot make this repo public. If you want to view it, contact me and I can send you a private link.");
+                }}><VscGithubAlt /></a>
+                : <a className={styles.icon} href={project.github} target="_blank" rel="noopener noreferrer"><VscGithubAlt /></a>
+                : <></>
               }
               {
                 project.deployment && <a className={styles.icon} href={project.deployment} target="_blank" rel="noopener noreferrer"><FiExternalLink /></a>
@@ -21,11 +33,17 @@ export default function Projects({ projects }) {
               }
             </div>
             <h3><a href={project.link}>{project.title}</a></h3>
-            <p className={styles.projectDescription}>{project.description}</p>
+            {
+              project.description.split("\n").map(line => (
+                <p key={uuid()} className={styles.projectDescription}>
+                  {line}
+                </p>
+              ))
+            }
             <div className={styles.tags}>
               {
                 project.tags.map(tag => (
-                  <p className={styles.tag}>
+                  <p key={tag} className={styles.tag}>
                     {tag}
                   </p>
                 ))

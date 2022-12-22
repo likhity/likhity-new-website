@@ -179,7 +179,7 @@ export default function Home() {
         </section>
         <section className={styles.contact}>
           <h2 className={`${styles.sentence} mb-5`}>Let's <span className="fw-bold accent">Talk.</span></h2>
-          <p className='mt-5'>I am currently looking for internship opportunities for the period July 2022 - August 2022.</p>
+          <p className='mt-5'>I am currently looking for internship opportunities for the period July 2023 - August 2023.</p>
           <p className="mb-5" >My inbox is always open.</p>
           <a href="/contact" className="button mt-5">Contact Me</a>
         </section>

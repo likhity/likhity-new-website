@@ -1,0 +1,109 @@
+@import "./variables.scss";
+
+.projectPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .heading {
+    width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      p {
+        margin: 0;
+        color: $accent-color;
+      }
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+      }
+    }
+    .icons {
+      font-size: 3rem;
+      .icon {
+        margin-left: 2rem;
+        transition: color 250ms ease;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 1px;
+      background-color: $accent-color;
+    }
+  }
+
+  .projectDescription {
+    display: flex;
+    width: 1200px;
+    min-height: 600px;
+    .collaborators {
+      width: 30%;
+      padding: 2rem 1.5rem;
+      position: relative;
+
+      h3 {
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+
+      .collaborator {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        img {
+          width: 50px;
+          border-radius: 100rem;
+        }
+        p {
+          margin: 0;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: calc(100% - 75px);
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        background-color: $accent-color;
+      }
+    }
+    .markdown {
+      width: 70%;
+      padding: 2rem;
+
+      .readMeTitle {
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+        color: lighten($bg-color, 50%);
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+      }
+
+      p, a, ul, pre {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+}

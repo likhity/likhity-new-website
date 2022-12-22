@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$accent-color: #f94679;
-$bg-color: #161617;
+@import "./variables.scss";
 
 html,
 body {
@@ -10,8 +10,7 @@ body {
   color: white;
   padding: 0;
   margin: 0;
-  font-family: Sen, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: $inter-font;
   overflow-x: hidden;
 }
 
@@ -27,6 +26,11 @@ a {
 
 p {
   font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sen-font;
+  font-weight: 200;
 }
 
 * {
@@ -59,10 +63,10 @@ p {
   font-style: italic;
 }
 
-code {
+code, .code {
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
-  color: white;
+  color: inherit;
   font-size: 2.5rem;
 }
 
@@ -88,65 +92,7 @@ code {
 
   section {
     padding: 5rem;
-    border-bottom: 1px solid $accent-color;
+    border-bottom: 1px solid transparentize($color: $accent-color, $amount: 0.6);
   }
-
-  .navBar {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    z-index: 5;
-    top: 0;
-    right: 0;
-
-    ul {
-      background-color: $bg-color;
-      box-sizing: content-box;
-      margin: 0;
-      display: flex;
-      padding: 0;
-      transition: transform 250ms;
-      border-color: $accent-color;
-      margin-top: 0.25rem;
-      font-size: 0.95rem;
-      li {
-        list-style-type: none;
-        $padding-top-and-bottom: 0;
-        overflow: hidden;
-        padding-top: $padding-top-and-bottom;
-        padding-bottom: $padding-top-and-bottom;
-        a {
-          padding: 0.75em 2em;
-          text-decoration: none;
-          &:hover {
-            // color: white;
-            border-bottom: 1px solid $accent-color;
-          }
-          // &.resume {
-          //   border-radius: 5px;
-          //   margin-right: 0.25rem;
-          //   border: 1px solid $accent-color;
-          // }
-        }
-      }
-      
-      &.showNav {
-        transform: translateX(0%);
-      }
-      &.hideNav {
-        transform: translateX(200%);
-      }
-    }
-
-    .navToggle {
-      list-style-type: none;
-      font-size: 2rem;
-      padding: 0 1rem;
-      z-index: 5;
-      &:hover {
-        color: $accent-color;
-        cursor: pointer;
-      }
-    }
-  }
+  
 }

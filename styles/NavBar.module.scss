@@ -1,0 +1,76 @@
+@import "./variables.scss";
+
+.navBar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  top: 10px;
+  right: 20px;
+
+  ul {
+    background-color: $bg-color;
+    box-sizing: content-box;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    transition: transform 250ms;
+    border-color: $accent-color;
+    font-size: 0.9rem;
+    li {
+      list-style-type: none;
+      $padding-top-and-bottom: 0;
+      overflow: hidden;
+      padding-top: $padding-top-and-bottom;
+      padding-bottom: $padding-top-and-bottom;
+      a {
+        padding: 0.75em 2em;
+        text-decoration: none;
+        transition: border-color 0.1s ease;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin-left: 0.5rem;
+        &:hover {
+          color: white;
+          border-color: $accent-color;
+        }
+        &.resume {
+          border: 1px solid $accent-color;
+          transition: background-color 0.1s ease;
+          &:hover {
+            background-color: transparentize($accent-color, 0.8);
+          }
+        }
+      }
+    }
+    
+    &.showNav {
+      transform: translateX(0%);
+    }
+    &.hideNav {
+      transform: translateX(200%);
+    }
+  }
+
+  .navToggle {
+    list-style-type: none;
+    font-size: 2rem;
+    padding: 0 1rem;
+    z-index: 5;
+    &:hover {
+      color: $accent-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.animation {
+  animation: fly-in 1s ease calc($typing-duration + $typing-delay + 1.5s) backwards;
+}
+
+@keyframes fly-in {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+}

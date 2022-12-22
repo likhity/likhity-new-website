@@ -1,26 +1,18 @@
 
-import { GoThreeBars } from "react-icons/go";
-import { VscChromeClose } from "react-icons/vsc";
-
 import { useState } from 'react';
 
-export default function NavBar() {
+import styles from "../styles/NavBar.module.scss";
 
-  const [toggleNav, setToggleNav] = useState(false);
+export default function NavBar({ animation }) {
 
   return (
-    <nav className="navBar">
-      <ul className={toggleNav ? "showNav" : 'hideNav'}>
+    <nav className={`${styles.navBar} ${animation ? styles.animation : ''}`}>
+      <ul className={styles.showNav}>
         <li><a href="/about">About Me</a></li>
         <li><a href="/projects">Projects</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li><a href="/resume" className="resume">Resume</a></li>
+        <li><a href="/resume" className={styles.resume}>Résumé</a></li>
       </ul>
-      <div className="navToggle" onClick={() => setToggleNav(!toggleNav)}>
-        {
-          toggleNav ? <VscChromeClose /> : <GoThreeBars />
-        }
-      </div>
     </nav>
   )
 }

@@ -33,7 +33,7 @@ export default function AboutTimeline() {
         <div className={`${styles.timelineElementItems}`}>
           <h3 className='h1 mb-4'>The <code>Processing</code> Days</h3>
           <p>I took a three year break from programming because I went through a phase of wanting to be a filmmaker.</p>
-          <p>I was exposed to it again with <span className={styles.accent}><b>Processing</b></span> in my high school engineering class.</p>
+          <p>I was exposed to it again with <span className="accent"><b>Processing</b></span> in my high school engineering class.</p>
           <p>Processing was fun, but I didn't get the same spark that I initially had with HTML, CSS, and Unity.</p>
           <p>I just finished the basic assignments and submmitted satisfactory work to get my desired A grade.</p>
         </div>
@@ -48,7 +48,7 @@ export default function AboutTimeline() {
         <div className={`${styles.timelineElementItems}`}>
           <h3 className='h1 mb-4'>College Apps Season</h3>
           <p>It was time to apply for college.</p>
-          <p>Parents and society said that <span className={styles.accent}>Computer Science</span> was the best major to apply for, given my history with programming.</p>
+          <p>Parents and society said that <span className="accent">Computer Science</span> was the best major to apply for, given my history with programming.</p>
           <p>So that's exactly what I did.</p>
         </div>
       </div>
@@ -105,16 +105,15 @@ export default function AboutTimeline() {
       </div>
       <div className={styles.timelineBreak}>
         <h3 className="h1 mb-4">Fully learning JavaScript was a major turning point for me.</h3>
-        <h3 className="h1 mb-4">I <span className={styles.accent}>finally</span> figured out exactly what I wanted to do for my career.</h3>
+        <h3 className="h1 mb-4">I <span className="accent">finally</span> figured out exactly what I wanted to do for my career.</h3>
       </div>
       <div className={`${styles.timelineElement} ${styles.left}`}>
         <div className={`${styles.timelineElementItems}`}>
           <h3 className={`h1 mb-4 ${styles.gold}`}> <code>React</code>, <code>Node.js</code>, <code>Express</code>, <code>MongoDB</code></h3>
+          <p>Learning this stack just made me feel unstoppable.</p>
           <p>Developed a number of projects. Some of which are <a href="https://github.com/likhity/the-burger-center" target="_blank">The Burger Center<HiOutlineExternalLink /></a> and 
             <a href="https://github.com/likhity/asu-course-tracker" target="_blank">ASU Course Tracker<HiOutlineExternalLink /></a>.
           </p>
-          <p>This tech stack just makes you feel unstoppable.</p>
-          <p>Building web apps is so frickin' fun.</p>
         </div>
         <div className={`${styles.timelineElementYear}`}>
           <p className={`mb-0`}>November 2021</p>
@@ -135,7 +134,7 @@ export default function AboutTimeline() {
         <div className={`${styles.timelineElementItems}`}>
           <h3 className='h1 mb-4'>Data Structures & Algorithms</h3>
           <p>This course at ASU really changed my view of my major.</p>
-          <p>I finally developed a liking of <span className={styles.accent}>Computer Science</span> rather than just programming.</p>
+          <p>I finally developed a liking of <span className="accent">Computer Science</span> rather than just programming.</p>
           <p>The design and analysis of algorithms is a very intellectually stimulating activity and surprisingly fun.</p>
         </div>
         <div className={`${styles.timelineElementYear}`}>
@@ -150,19 +149,18 @@ export default function AboutTimeline() {
           <h3 className='h1 mb-4'>React/TypeScript Intern @ IQM Corporation</h3>
           <p>Landed my first internship.</p>
           <p>I learned a lot here. I honed my React skills and learned TypeScript.</p>
-          <p>Learned how to effectively work with a team with JIRA.</p>
+          <p>Learned how to effectively work with a team using Git, BitBucket, & JIRA.</p>
           <p>Developed a couple of new features for their apps.</p>
           <p>Lots and lots of bug fixes.</p>
-          <p>Got pretty good at Git.</p>
         </div>
       </div>
       <div className={`${styles.timelineElement} ${styles.left} ${styles.end}`}>
         <div className={`${styles.timelineElementItems}`}>
-          <h3 className='h1 mb-4'>Continuing My Education.</h3>
+          <h3 className='h1 mb-4'>Continuing My Education, Looking For Opportunities.</h3>
           <p>Currently in my third year at ASU.</p>
-          <p>Just finished introductory courses on AI and Theoretical Computer Science.</p>
+          <p>Just finished introductory courses on AI and Theoretical CS.</p>
           <p>Searching for internships.</p>
-          <p>Looking to hire? <a href="#" target="_blank">Contact Me<HiOutlineExternalLink /></a>.</p>
+          <p><a href="#" target="_blank">Hire Me<HiOutlineExternalLink /></a></p>
           <div className={styles.endTimeline}></div>
         </div>
         <div className={`${styles.timelineElementYear}`}>

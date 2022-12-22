@@ -1,8 +1,4 @@
-$bg-color: #161617;
-$accent-color: #f94679;
-$typing-duration: 2s;
-$typing-steps: 17;
-$typing-delay: 500ms;
+@import "./variables.scss";
 
 .gold {
   color: gold;

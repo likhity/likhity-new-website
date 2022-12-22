@@ -1,5 +1,4 @@
-$bg-color: #161617;
-$accent-color: #f94679;
+@import "./variables.scss";
 
 .timeline {
   width: 1150px;
@@ -37,6 +36,10 @@ $accent-color: #f94679;
           box-shadow: 0 0 20px 5px transparentize($accent-color, 0.7);
         }
 
+        h3 a {
+          text-decoration: none;
+        }
+
         .startTimeline {
           position: absolute;
           height: 51%;
@@ -64,6 +67,7 @@ $accent-color: #f94679;
         padding-left: 2.5rem;
         align-items: center;
         color: $accent-color;
+        font-family: Sen;
         p {
           font-size: 2rem;
         }
@@ -79,6 +83,10 @@ $accent-color: #f94679;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        h3 a {
+          text-decoration: none;
+        }
       }
       
       .timelineElementYear {
@@ -90,6 +98,7 @@ $accent-color: #f94679;
         position: relative;
         color: $accent-color;
         padding-right: 2.5rem;
+        font-family: Sen;
         border-right: 5px solid transparentize($accent-color, 0.5);
 
         p {

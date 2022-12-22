@@ -84,6 +84,7 @@ export default function AboutTimeline() {
         <p>Now, I realized it's more about logic and getting a computer to perform a task in the most optimal way.</p>
         <p>C & C++ forced me to think about what's actually going on inside the actual computer, with the CPU and the memory.</p>
         <p>Although trying to build anything useful with these languages is a pain, it taught me a lot about Computer Science.</p>
+        <p><a href="/projects?tags=C%2b%2b" target="_blank" rel="noopener noreferrer">These<HiOutlineExternalLink /></a> are some projects that I built.</p>
       </Timeline.Right>
       <Timeline.Left timeText="Spring 2022">
         <h3 className='h1 mb-4'>Data Structures & Algorithms</h3>

@@ -16,6 +16,7 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Hello! My name is Likhit Vyas Yarramsetti. I am currently a junior at ASU studying Computer Science and a future full-stack software engineer and filmmaker. Thank you for taking the time to check out my stuff!" />
         <title>Contact - Likhit Vyas Yarramsetti</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
           @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap');
@@ -29,7 +30,7 @@ export default function Contact() {
           <h1 className="text-center">Let's <span className="accent">Talk.</span></h1>
           <div className={styles.formSection}>
             <div className={styles.text}>
-              <p>You can use the form or send an email to <a href="mailto:y.vyas.likhit@gmail.com">y.vyas.likhit@gmail.com</a>.</p>
+              <p>You can use the form or send an email to <a href="mailto:y.vyas.likhit@gmail.com">y.vyas.likhit@gmail.com.</a></p>
               <p>Both will work.</p>
               <p>I'll get back to you as soon as I can.</p>
             </div>

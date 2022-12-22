@@ -8,6 +8,7 @@
   h1 {
     font-weight: 600;
     font-size: 3rem;
+    margin-top: 1.5rem;
   }
 
   .formSection {
@@ -18,7 +19,7 @@
     align-items: center;
 
     .text {
-      width: 35%;
+      width: 75%;
       p {
         font-size: 1.25rem;
       }
@@ -28,7 +29,8 @@
     }
 
     .form {
-      width: 50%;
+      width: 90%;
+
       input, textarea {
         width: 100%;
         padding: 1rem;
@@ -58,19 +60,22 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1150px) {
 
   .contact {
     .formSection {
       flex-direction: column;
   
       .text {
-        width: 75%;
+        width: 50%;
         text-align: center;
         margin-bottom: 2rem;
       }
 
       .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 90%;
       }
     }

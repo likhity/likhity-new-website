@@ -14,7 +14,7 @@ export default function NavBar({ delayedAnimation }) {
   return (
     <nav className={`${styles.navBar} ${delayedAnimation ? styles.delayedAnimation : styles.animation}`}>
       <Link href="/">
-        <a className={styles.homeLink}>L<span className="accent">V</span>Y</a>
+        <a className={styles.homeLink}>L<span className={`accent fw-bold`}>V</span> <span className={styles.yLetter}>Y</span> </a>
       </Link>
       <ul className={styles.showNav}>
         <li>

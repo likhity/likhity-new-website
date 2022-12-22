@@ -24,6 +24,11 @@
     &:hover {
       color: $accent-color;
     }
+
+    .yLetter {
+      position: relative;
+      right: 38px;
+    }
   }
 
   ul {

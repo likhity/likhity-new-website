@@ -243,3 +243,15 @@
     }
   }
 }
+
+@media (max-width: 470px) {
+  .title {
+    margin-left: 0;
+  }
+  .skillsSection .skills {
+    width: 100%;
+    .skill p {
+      font-size: 1rem;
+    }
+  }
+}

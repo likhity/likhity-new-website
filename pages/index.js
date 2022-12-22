@@ -22,6 +22,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Hello! My name is Likhit Vyas Yarramsetti. I am currently a junior at ASU studying Computer Science and a future full-stack software engineer and filmmaker. Thank you for taking the time to check out my stuff!" />
         <title>Likhit Vyas Yarramsetti</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
           @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap');

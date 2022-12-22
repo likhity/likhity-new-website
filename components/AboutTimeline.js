@@ -18,8 +18,6 @@ export default function AboutTimeline() {
         <p>I found the Unity Game Engine.</p>
         <p>Software engineering and problem solving was beginning to feel <span className={`fw-bold accent`}>incredibly fun</span> and something that I thought would be great to do as a career.</p>
         <p>All of the games and websites that I built during this year are unfortunately lost on an old computer.</p> 
-          <p>All of the games and websites that I built during this year are unfortunately lost on an old computer.</p> 
-        <p>All of the games and websites that I built during this year are unfortunately lost on an old computer.</p> 
         <p>So I <i>unfortunately</i> have no way of showcasing them.</p>
         <p>I could be making all of this up, I know. But just trust me. Ok?</p>
       </Timeline.Right>

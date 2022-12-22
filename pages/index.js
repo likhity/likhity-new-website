@@ -36,7 +36,7 @@ export default function Home() {
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
             <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> Yarramsetti</h1>
-            <p className={styles.nameSubtitle}>Software Engineer <span className="accent">+</span> Filmmaker</p>
+            <p className={styles.nameSubtitle}>Software Engineer <span className="accent">+</span> UI Designer</p>
           </div>
         </section>
         <section className={styles.introduction}>

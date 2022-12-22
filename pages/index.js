@@ -93,7 +93,7 @@ export default function Home() {
                   <li>Linear Algebra</li>
                   <li>Probability &amp; Statistics</li>
                 </ul>
-                <h4 className="fw-bold">Current GPA: <span className={`accent`}>3.85</span></h4>
+                <h4 className="fw-bold">Current GPA: <span className={`accent`}>3.83</span></h4>
               </Col>
               <Col>
                 <Image src="/asu.jpg" alt='Vyas walking in ASU campus' width={500} className="img-fluid mt-4 mt-md-0"></Image>

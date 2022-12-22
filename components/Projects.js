@@ -20,7 +20,7 @@ export default function Projects({ projects }) {
                 project.download && <a className={styles.icon} href={project.download} target="_blank" rel="noopener noreferrer"><FiDownload /></a>
               }
             </div>
-            <h3><a href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a></h3>
+            <h3><a href={project.link}>{project.title}</a></h3>
             <p className={styles.projectDescription}>{project.description}</p>
             <div className={styles.tags}>
               {

@@ -1,7 +1,7 @@
 
-import { useState } from 'react';
-
 import styles from "../styles/NavBar.module.scss";
+
+import { FiDownload } from "react-icons/fi";
 
 export default function NavBar({ delayedAnimation }) {
 

@@ -2,7 +2,6 @@ import styles from "../styles/Footer.module.scss";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-import { AiFillHeart } from "react-icons/ai";
 import { FiGithub, FiTwitter, FiDownload, FiMail } from "react-icons/fi";
 import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";

@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+:global(.main) .projectsSection {
+  padding: 7rem 2rem;
+}
+
 .projectsSection {
   display: flex;
   flex-direction: column;

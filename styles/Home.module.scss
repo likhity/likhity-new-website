@@ -110,10 +110,11 @@
 
   .skills {
     $size: 350px;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, $size);
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
     margin-top: 3rem;
     list-style-type: none;
     padding-left: 0;
@@ -141,6 +142,12 @@
         color: white !important;
       }
     }
+  }
+}
+
+:global(.main) {
+  .projectsSection {
+    padding: 7rem 2rem;
   }
 }
 

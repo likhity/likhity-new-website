@@ -10,63 +10,66 @@ export default function AboutTimeline() {
     <Timeline>
       <Timeline.Left start={true} timeText="Early 2016">
         <h3 className='h1 mb-4'><span className='code'>HTML</span> &amp; <span className="code">CSS</span></h3>
-        <p>I first started building dumb websites with HTML and CSS when I was in <span className="fw-bold accent">9th grade</span>.</p>
+        <p>I first started building small websites with HTML and CSS when I was in <span className="fw-bold accent">9th grade</span>.</p>
+        <p>I knew the next step was learning JavaScript, but I honestly don't remember why I never did during this time and procrastinated on it for <span className="accent fw-bold">3 years</span>.</p>
       </Timeline.Left>
       <Timeline.Right timeText="Summer 2016">
         <h3 className='h1 mb-4'>Unity &amp; <span className="code">C#</span></h3>
         <p>I got bored of building websites and switched to game development.</p>
-        <p>I found the Unity Game Engine.</p>
+        <p>I found the Unity Game Engine, and tried to make some games that would sell on Steam.</p>
         <p>Software engineering and problem solving was beginning to feel <span className={`fw-bold accent`}>incredibly fun</span> and something that I thought would be great to do as a career.</p>
-        <p>All of the games and websites that I built during this year are unfortunately lost on an old computer.</p> 
-        <p>So I <i>unfortunately</i> have no way of showcasing them.</p>
-        <p>I could be making all of this up, I know. But just trust me. Ok?</p>
       </Timeline.Right>
       <Timeline.Left timeText="Fall 2019">
         <h3 className='h1 mb-4'><span className="code">Processing</span></h3>
-        <p>I took a three year break from programming because I went through a phase of wanting to be a filmmaker.</p>
-        <p>I was exposed to it again with <span className="accent"><b>Processing</b></span> in my high school engineering class.</p>
-        <p>Processing was fun, but I didn't get the same spark that I initially had with HTML, CSS, and Unity.</p>
-        <p>I just finished the basic assignments and submmitted satisfactory work to get my desired A grade.</p>
+        <p>I had a three year break from programming because I went through a phase of wanting to be a filmmaker.</p>
+        <p>I was exposed to it again with <a href='https://processing.org/' target="_blank" rel="noopener noreferrer" className="accent">Processing</a> in my high school engineering class.</p>
+        <p>It was fun, but I didn't get the same spark that I initially had with HTML, CSS, and Unity.</p>
+        <p>Just submitted basic work for those assignments to get my desired grade.</p>
       </Timeline.Left>
       <Timeline.Right timeText="Fall 2019">
         <h3 className='h1 mb-4'>College Apps Season</h3>
         <p>It was time to apply for college.</p>
-        <p>Chose <span className="accent">Computer Science</span> as my major because it seemed like a good choice, given my history with programming.</p>
+        <p><span className="accent">Computer Science</span> seemed like a good choice as my major, given my history with programming.</p>
+        <p>So I went ahead and applied to Arizona State University and got in.</p>
       </Timeline.Right>
       <Timeline.Left timeText="Summer 2020">
         <h3 className='h1 mb-4'><span className="code">Python</span></h3>
-        <p>Had a bit of a lull year, not really knowing what to do.</p>
         <p>Parents and society said that the language I should be spending my time learning is <span className={`fw-bold accent`}>Python</span>.</p>
         <p>So that's exactly what I did.</p>
-        <p>It was semi-fun, but not exactly what I was expecting.</p>
-        <p>I wanted there to be a lot more creativity to it, but it's more about logical thinking.</p>
-        <p>This quickly got boring for me.</p>
+        <p>Although it's extremely easy to learn, it quickly got boring for me.</p>
+        <p>I did not really have an idea of exactly how I could apply this skill to do something useful.</p>
+        <p>I was just learning a language for the sake of learning a language.</p>
       </Timeline.Left>
       <Timeline.Break>
-        <h3 className="h1 mb-4">The problem was that I did not have any idea of what I wanted to build.</h3>
+        <p className="h1 mb-4">I knew I wanted to build cool things, but I couldn't figure out exactly how to go about doing that.</p>
       </Timeline.Break>
       <Timeline.Right timeText="Fall 2020">
         <h3 className='h1 mb-4'><span className="code">p5.js</span></h3>
+        <p>Had a bit of a lull year, not really knowing what to do.</p>
         <p>The first semester of my Computer Science path at ASU started, and I had to take a general engineering course.</p>
-        <p>In it, we had to make a project using <span className={`accent`}>p5.js</span>.</p>
-        <p>I revisited my old friends HTML and CSS. I was finally starting to feel programming was fun again.</p>
+        <p>In it, we had to make a project using <span className={`accent`}>p5.js</span> (which is basically a JS library that does everything Processing can).</p>
+        <p>I revisited my old friends HTML and CSS. I felt like programming was fun again.</p>
         <p>I felt I could actually be creative here.</p>
-        <p><a href="/projects/motor-skillz" target="_blank" rel="noopener noreferrer">Here<HiOutlineExternalLink /></a> is the project that we built.</p>
+        <p>I also finally got around to learning JavaScript, but I just learned the bare minimum to complete this project.</p>
+        <p><a href="/projects/motor-skillz" target="_blank" rel="noopener noreferrer">This<HiOutlineExternalLink /></a> is the project that I built in the class.</p>
       </Timeline.Right>
       <Timeline.Left timeText="Spring 2021">
-        <h3 className='h1 mb-4'><span className="code">Java</span></h3>
-        <p>Meh.</p>
+        <h3 className='h1 mb-4'>Learning <span className="code">Java</span></h3>
+        <p>Java is a very verbose language that can be fun sometimes but annoying most of the time.</p>
+        <p>Installation and setup is annoying as hell, typing out <code>public static void main(String[] args)</code> is annoying as hell, and trying to do anything substantial and useful is annoying as hell.</p>
+        <p>However, I give credit to this language for teaching me a lot of concepts in object-oriented programming, CS, and software development.</p>
       </Timeline.Left>
       <Timeline.Right timeText="Summer 2021">
         <h3 className={`h1 mb-4 ${styles.gold}`}><span className="code">JavaScript</span></h3>
         <p>I still didn't have a good idea on what I should be focusing on.</p>
-        <p>Then one day, I encountered <a href="https://www.youtube.com/@WebDevSimplified" target="_blank" rel="noopener noreferrer">Web Dev Simplified <HiOutlineExternalLink /></a>. And it finally clicked.</p>
-        <p>I fully invested myself into the world of JavaScript, and fell in love with it.</p>
+        <p>I knew I wanted to build cool things, but I couldn't figure out exactly how to go about doing that.</p>
+        <p>Then one day, I encountered this YouTube channel <a href="https://www.youtube.com/@WebDevSimplified" target="_blank" rel="noopener noreferrer">Web Dev Simplified <HiOutlineExternalLink /></a>, and it finally clicked.</p>
         <p>I realized what I find most joy in: building web applications with JS.</p>
+        <p>I fully invested myself into the world of JavaScript, and fell in love with it.</p>
       </Timeline.Right>
       <Timeline.Break>
-        <h3 className="h1 mb-4">Fully learning JavaScript was a major turning point for me.</h3>
-        <h3 className="h1 mb-4">I <span className="accent">finally</span> figured out exactly what I wanted to do for my career.</h3>
+        <p className="h1 mb-4">Fully learning JavaScript was a major turning point for me.</p>
+        <p className="h1 mb-4">I <span className="accent">finally</span> figured out exactly what I wanted to do for my career.</p>
       </Timeline.Break>
       <Timeline.Left timeText="November 2021">
         <h3 className={`h1 mb-4 ${styles.gold}`}> <span className="code">React</span>, <span className="code">Node.js</span>, <span className="code">Express</span>, <span className="code">MongoDB</span></h3>
@@ -77,9 +80,10 @@ export default function AboutTimeline() {
       </Timeline.Left>
       <Timeline.Right timeText="2021 - 2022">
         <h3 className='h1 mb-4'>Learning <span className="code">C</span> &amp; <span className="code">C++</span></h3>
-        <p>I started to appreciate the logical-thinking side of programming more.</p>
-        <p>Memory management is not as hard as it's hyped up to be.</p>
-        <p>It's actually kinda fun.</p>
+        <p>Up till now, I've been thinking of programming as a mostly creative exercise, something that you do to build cool things.</p>
+        <p>Now, I realized it's more about logic and getting a computer to perform a task in the most optimal way.</p>
+        <p>C & C++ forced me to think about what's actually going on inside the actual computer, with the CPU and the memory.</p>
+        <p>Although trying to build anything useful with these languages is a pain, it taught me a lot about Computer Science.</p>
       </Timeline.Right>
       <Timeline.Left timeText="Spring 2022">
         <h3 className='h1 mb-4'>Data Structures & Algorithms</h3>

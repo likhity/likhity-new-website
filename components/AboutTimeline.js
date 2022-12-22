@@ -71,8 +71,8 @@ export default function AboutTimeline() {
       <Timeline.Left timeText="November 2021">
         <h3 className={`h1 mb-4 ${styles.gold}`}> <span className="code">React</span>, <span className="code">Node.js</span>, <span className="code">Express</span>, <span className="code">MongoDB</span></h3>
         <p>Learning this stack just made me feel unstoppable.</p>
-        <p>Developed a number of projects. Some of which are <a href="https://github.com/likhity/the-burger-center" target="_blank">The Burger Center<HiOutlineExternalLink /></a> and 
-          <a href="https://github.com/likhity/asu-course-tracker" target="_blank">ASU Course Tracker<HiOutlineExternalLink /></a>.
+        <p>Developed a number of projects. Some of which are <a href="/projects/the-burger-center" target="_blank" rel="noopener noreferrer">The Burger Center<HiOutlineExternalLink /></a> and 
+          <a href="/projects/asu-course-tracker" target="_blank" rel="noopener noreferrer">ASU Course Tracker<HiOutlineExternalLink /></a>.
         </p>
       </Timeline.Left>
       <Timeline.Right timeText="2021 - 2022">
@@ -100,7 +100,7 @@ export default function AboutTimeline() {
         <p>Currently in my third year at ASU.</p>
         <p>Just finished introductory courses on AI and Theoretical CS.</p>
         <p>Searching for internships.</p>
-        <p><a href="#" target="_blank">Hire Me<HiOutlineExternalLink /></a></p>
+        <p><a href="/contact">Get In Touch<HiOutlineExternalLink /></a></p>
       </Timeline.Left>
     </Timeline>
   );

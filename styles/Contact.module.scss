@@ -1,8 +1,62 @@
 @import "./variables.scss";
 
-.contactSection {
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   h1 {
     font-weight: 600;
     font-size: 3rem;
+  }
+
+  .formSection {
+    width: 1200px;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .text {
+      width: 35%;
+      p {
+        font-size: 1.25rem;
+      }
+      a {
+        svg {
+          margin-right: 0.5rem;
+        }
+        margin: 0;
+      }
+    }
+
+    .form {
+      width: 50%;
+      input, textarea {
+        width: 100%;
+        padding: 1rem;
+        display: block;
+        margin-bottom: 1rem;
+        background-color: $bg-color;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        color: white;
+
+        &:focus {
+          border-color: $accent-color;
+        }
+      }
+
+      textarea {
+        min-height: 200px;
+        padding: 1rem;
+      }
+
+      button {
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+    }
   }
 }

@@ -5,6 +5,8 @@ import styles from "../styles/Contact.module.scss";
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
 
+import { FiMail } from 'react-icons/fi';
+
 export default function Contact() {
   return (
     <div className={styles.container}>
@@ -17,9 +19,22 @@ export default function Contact() {
       </Head>
 
       <main className="main">
-        <section className={styles.contactSection}>
+        <section className={styles.contact}>
           <NavBar />
           <h1 className="text-center">Let's <span className="accent">Talk.</span></h1>
+          <div className={styles.formSection}>
+            <div className={styles.text}>
+              <p>You can use the form or send an email to <a href="mailto:y.vyas.likhit@gmail.com">y.vyas.likhit@gmail.com</a>.</p>
+              <p>Both will work.</p>
+              <p>I'll get back to you as soon as I can.</p>
+            </div>
+            <form className={styles.form} action="https://formsubmit.co/d069f9b37767623e25063b9e10c29f64" method='POST'>
+              <input type="text" name="name" id="name" placeholder='Name' required/>
+              <input type="email" name="email" id="email" placeholder='Email' required/>
+              <textarea type="text" name="message" id="message" placeholder='Message' required/>
+              <button type="submit" className='button'>Submit</button>
+            </form>
+          </div>
         </section>
         <Footer />
       </main>

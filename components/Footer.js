@@ -35,7 +35,7 @@ export default function Footer() {
         </Col>
         </Row>
         <div className={`mt-5 ${styles.built}`}>
-          <p>Built with passion using</p>
+          <p>Built by hand using</p>
           <div className="d-flex">
             <a href="https://reactjs.org/"><SiReact /></a>
             <a href="https://nextjs.org/"><SiNextdotjs /></a>

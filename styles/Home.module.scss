@@ -91,6 +91,9 @@
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
   }
+  a {
+    text-align: center;
+  }
 }
 
 .experience {
@@ -169,39 +172,5 @@
   p {
     max-width: 600px;
     text-align: center;
-  }
-}
-
-@media (max-width: 1100px) {
-  .main {
-    .timelineSection {
-      .timeline {
-        width: 100%;
-        .timelineElement {
-          display: flex;
-          flex-direction: column;
-          
-          &.left {
-            .timelineElementItems {
-              width: 100%;
-              border-right: none;
-              &::after {
-                content: none;
-              }
-            }
-          }
-
-          &.right {
-            .timelineElementItems {
-              width: 100%;
-              border-right: none;
-              &::after {
-                content: none;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }

@@ -47,26 +47,37 @@ export default function ProjectPage({ project }) {
         <NavBar />
         <section className={styles.projectPage}>
           <div className={styles.heading}>
-            <div className={styles.title}>
-              <p>Project</p>
-              <h1>{project.title}</h1>
+            <div className='d-flex align-items-center justify-content-between'>
+              <div className={styles.title}>
+                <p>Project</p>
+                <h1>{project.title}</h1>
+              </div>
+              <div className={styles.icons}>
+                {
+                  project.github ?
+                  project.github === "ask me" ?
+                  <a className={styles.icon} onClick={() => { 
+                    addAlert("I cannot make this repo public. If you want to view it, contact me and I can send you a private link.");
+                  }}><VscGithubAlt /></a>
+                  : <a className={styles.icon} href={project.github} target="_blank" rel="noopener noreferrer"><VscGithubAlt /></a>
+                  : <></>
+                }
+                {
+                  project.deployment && <a className={styles.icon} href={project.deployment} target="_blank" rel="noopener noreferrer"><FiExternalLink /></a>
+                }
+                {
+                  project.download && <a className={styles.icon} href={project.download} target="_blank" rel="noopener noreferrer"><FiDownload /></a>
+                }
+              </div>
             </div>
-            <div className={styles.icons}>
-            {
-                project.github ?
-                project.github === "ask me" ?
-                <a className={styles.icon} onClick={() => { 
-                  addAlert("I cannot make this repo public. If you want to view it, contact me and I can send you a private link.");
-                }}><VscGithubAlt /></a>
-                : <a className={styles.icon} href={project.github} target="_blank" rel="noopener noreferrer"><VscGithubAlt /></a>
-                : <></>
-              }
-              {
-                project.deployment && <a className={styles.icon} href={project.deployment} target="_blank" rel="noopener noreferrer"><FiExternalLink /></a>
-              }
-              {
-                project.download && <a className={styles.icon} href={project.download} target="_blank" rel="noopener noreferrer"><FiDownload /></a>
-              }
+            <div className={styles.tags}>
+                {
+                  project.tags.map(tag => (
+                    <p key={tag} className={styles.tag}>
+                      {tag}
+                    </p>
+                  ))
+                }
             </div>
           </div>
           <div className={styles.projectDescription}>
@@ -75,7 +86,7 @@ export default function ProjectPage({ project }) {
               {
                 contributors
                 ? contributors.map(contributor => (
-                  <div className={styles.collaborator}>
+                  <div key={contributor.node_id} className={styles.collaborator}>
                     <img src={contributor.avatar_url} alt={`${contributor.login} GitHub avatar`} />
                     <a href={contributor.html_url}>{contributor.login}</a>
                   </div>

@@ -73,7 +73,7 @@ code {
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   color: inherit;
-  font-size: 2.5rem;
+  font-size: inherit;
 }
 
 .accentList {
@@ -119,6 +119,8 @@ code {
   border: 1px solid $accent-color;
   border-radius: 5px;
   text-decoration: none;
+  background-color: $bg-color;
+  color: white;
   padding: 1rem 2rem;
   transition: background-color 250ms ease;
   font-size: 1.1rem;

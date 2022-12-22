@@ -1,0 +1,291 @@
+$bg-color: #161617;
+$accent-color: #f94679;
+$typing-duration: 2s;
+$typing-steps: 17;
+$typing-delay: 500ms;
+
+.accent {
+  color: $accent-color;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.code {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+.asu {
+  color: #8C1D40;
+  font-weight: 900;
+  padding: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify {
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+}
+
+.sentence {
+  font-size: 3rem;
+}
+
+.main {
+
+  section {
+    padding: 5rem;
+    border-bottom: 1px solid $accent-color;
+  }
+
+  .header {
+  
+    padding: 7.5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .navBar {
+      position: absolute;
+      z-index: 5;
+      background-color: $bg-color;
+      top: 50px;
+      right: 100px;
+      transform: translateX(500%);
+      box-shadow: -60px 1px 75px -15px transparentize(#777, 0.7);
+      animation: fly-in-left 1s ease-in-out calc($typing-duration + $typing-delay + 1s) forwards;
+      ul {
+        box-sizing: content-box;
+        margin: 0;
+        display: flex;
+        padding: 0;
+        li {
+          list-style-type: none;
+          margin: 0;
+          overflow: hidden;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          a {
+            padding: 1rem 1.5rem;
+            &:hover {
+              background-color: $accent-color;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    @keyframes fly-in-left {
+      from {
+        transform: translateX(500%);
+      }
+      to {
+        transform: translateX(0%);
+      }
+    }
+  
+    .typing {
+      font-size: 2.5rem;
+      position: relative;
+      width: min-content;
+      white-space: nowrap;
+      font-family: Roboto Mono;
+      margin-bottom: 0;
+    
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    
+      &::before {
+        background: $bg-color;
+        animation: typewriter $typing-duration steps($typing-steps)
+          $typing-delay forwards;
+      }
+    
+      &::after {
+        background-color: $accent-color;
+        width: 2px;
+        margin-left: 5px;
+        animation: typewriter $typing-duration steps($typing-steps)
+          $typing-delay forwards,
+        pulse 1s infinite;
+      }
+    }
+    
+    .nameTitle {
+      font-size: 5rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      animation: fly-in 500ms ease-in-out calc($typing-duration + $typing-delay + 500ms) backwards;
+      margin-bottom: 1rem;
+    }
+    
+    @keyframes typewriter {
+      to {
+        left: 100%;
+      }
+    }
+    
+    @keyframes pulse {
+      50% {
+        opacity: 0;
+      }
+    }
+    
+    @keyframes fly-in {
+      from {
+        opacity: 0;
+        transform: translateY(30px) rotateX(5deg);
+      }
+    }
+  
+    .nameSubtitle {
+      font-weight: normal;
+      font-size: 2rem;
+      position: relative;
+      animation: fly-in 500ms ease-in-out calc($typing-duration + $typing-delay + 1s) backwards;
+    }
+  }
+
+  .timelineSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .timelineTitle {
+      font-size: 3rem;
+      font-weight: 600;
+      max-width: 1000px;
+    }
+    .timeline {
+      width: 1150px;
+      .timelineElement {
+        display: flex;
+        justify-content: center;
+
+        &.left {
+          .timelineElementItems {
+            width: 50%;
+            padding: 1rem;
+            position: relative;
+            border-right: 5px solid transparentize($accent-color, 0.5);
+  
+            &::after {
+              content: '';
+              $bullet-size: 10px;
+              width: $bullet-size;
+              height: $bullet-size;
+              border-radius: 1000rem;
+              display: block;
+              position: absolute;
+              top: 50%;
+              right: -1.4%;
+              z-index: 2;
+              background-color: $accent-color;
+              box-shadow: 0 0 20px 5px transparentize($accent-color, 0.7);
+            }
+
+            .mask {
+              position: absolute;
+              height: 51%;
+              width: 10px;
+              background-color: $bg-color;
+              right: -7px;
+              top: -1px;
+              z-index: 1;
+            }
+          }
+
+          .timelineElementYear {
+            width: 50%;
+            min-height: 100%;
+            display: flex;
+            padding-left: 2.5rem;
+            align-items: center;
+            color: $accent-color;
+            p {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        &.right {
+          .timelineElementItems {
+            width: 50%;
+            padding: 1rem;
+            position: relative;
+            padding-left: 2.5rem;
+          }
+          
+          .timelineElementYear {
+            width: 50%;
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            color: $accent-color;
+            padding-right: 2.5rem;
+            border-right: 5px solid transparentize($accent-color, 0.5);
+
+            p {
+              font-size: 2rem;
+            }
+
+            &::after {
+              content: '';
+              $bullet-size: 10px;
+              width: $bullet-size;
+              height: $bullet-size;
+              border-radius: 1000rem;
+              display: block;
+              position: absolute;
+              top: 50%;
+              right: -1.4%;
+              z-index: 2;
+              background-color: $accent-color;
+              box-shadow: 0 0 20px 5px transparentize($accent-color, 0.7);
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid $accent-color;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

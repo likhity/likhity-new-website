@@ -11,7 +11,7 @@
   }
 
   .formSection {
-    width: 1200px;
+    width: min(1200px, 100%);
     margin-top: 4rem;
     display: flex;
     justify-content: space-around;
@@ -23,9 +23,6 @@
         font-size: 1.25rem;
       }
       a {
-        svg {
-          margin-right: 0.5rem;
-        }
         margin: 0;
       }
     }
@@ -56,6 +53,25 @@
       button {
         margin-top: 1rem;
         font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  .contact {
+    .formSection {
+      flex-direction: column;
+  
+      .text {
+        width: 75%;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .form {
+        width: 90%;
       }
     }
   }

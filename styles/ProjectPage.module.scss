@@ -7,7 +7,7 @@
   align-items: center;
   
   .heading {
-    width: 1200px;
+    width: min(100%, 1200px);
     position: relative;
 
     .title {
@@ -62,16 +62,18 @@
 
   .projectDescription {
     display: flex;
-    width: 1200px;
+    width: min(100%, 1200px);
     min-height: 600px;
     .collaborators {
       width: 30%;
       padding: 2rem 1.5rem;
+      padding-left: 0;
       position: relative;
 
       h3 {
         font-weight: 600;
         margin-bottom: 1.5rem;
+        width: 100%;
       }
 
       .collaborator {
@@ -111,13 +113,13 @@
         width: 1px;
         height: calc(100% - 75px);
         top: 50%;
-        right: 20px;
+        right: 0;
         transform: translateY(-50%);
         background-color: $accent-color;
       }
     }
     .markdown {
-      width: 70%;
+      width: 100%;
       padding: 2rem;
 
       .readMeTitle {
@@ -148,4 +150,38 @@
     }
   }
 
+}
+
+@media (max-width: 1230px) {
+
+  .projectPage {
+
+    .heading {
+      .title {
+        h1 {
+          font-size: 2.75rem;
+        }
+      }
+    }
+
+    .projectDescription {
+      flex-direction: column;
+
+      .collaborators {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &::after {
+          width: 100%;
+          height: 1px;
+          top: auto;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: transparentize($accent-color, 0.5);
+        }
+      }
+    }
+  }
 }

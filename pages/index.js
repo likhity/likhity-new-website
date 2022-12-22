@@ -50,7 +50,7 @@ export default function Home() {
           </Container>
         </section>
         <section className={styles.experience}>
-          <h2 className={`mb-5 fw-bold ${styles.sentence}`}>Where I've <span className="accent">Worked.</span></h2>
+          <h2 className={`mb-5 fw-bold ${styles.sentence} text-center`}>Where I've <span className="accent">Worked.</span></h2>
           <Timeline>
             <Timeline.Left start={true} timeText="May 2022 - August 2022">
               <h3 className="h1 mb-4">React/TypeScript Intern <span className='accent'>@ <a href="https://iqm.com/">IQM Corporation</a></span></h3>
@@ -83,13 +83,13 @@ export default function Home() {
                 <h4 className="fw-bold">Current GPA: <span className={`accent`}>3.85</span></h4>
               </Col>
               <Col>
-                <Image src="/asu.jpg" width={500} className="img-fluid"></Image>
+                <Image src="/asu.jpg" width={500} className="img-fluid mt-4 mt-md-0"></Image>
               </Col>
             </Row>
           </Container>
         </section>
         <section className={styles.skillsSection}>
-          <h2 className={styles.sentence}>Yeah, I got <span className="fw-bold accent">Skills.</span></h2>
+          <h2 className={`${styles.sentence} text-center`}>Yeah, I got <span className="fw-bold accent">Skills.</span></h2>
           <ul className={styles.skills}>
             <li className={`h1 ${styles.skill}`}>HTML/CSS <p>3 years</p></li>
             <li className={`h1 ${styles.skill}`}>JS <p>2.5-3 years</p></li>
@@ -103,12 +103,12 @@ export default function Home() {
           </ul>
         </section>
         <section className={styles.projectsSection}>
-          <h2 className={styles.sentence}>Some <span className="fw-bold accent">Projects</span> I've Built.</h2>
+          <h2 className={`${styles.sentence} text-center`}>Some <span className="fw-bold accent">Projects</span> I've Built.</h2>
           <Projects projects={projects.slice(0, 9)} />
           <a className="button mt-5" href="/projects">See More</a>
         </section>
         <section className={styles.contact}>
-          <h2 className={`${styles.sentence} mb-5`}>Let's <span className="fw-bold accent">Talk.</span></h2>
+          <h2 className={`${styles.sentence} text-center mb-5`}>Let's <span className="fw-bold accent">Talk.</span></h2>
           <p className='mt-5'>I am currently looking for internship opportunities for the period July 2023 - August 2023.</p>
           <p className="mb-5" >My inbox is always open.</p>
           <a href="/contact" className="button mt-5">Contact Me</a>

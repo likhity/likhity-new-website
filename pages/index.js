@@ -2,8 +2,15 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 
 import { Image, Row, Col, Container } from "react-bootstrap";
+import { GoThreeBars } from "react-icons/go";
+import { VscChromeClose } from "react-icons/vsc";
+
+import { useState } from 'react';
 
 export default function Home() {
+
+  const [toggleNav, setToggleNav] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,15 +19,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <section className={styles.header}>
-          <div className={styles.navBar}>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Resume</a></li>
-              <li><a href="">Contact Me</a></li>
-            </ul>
+        <nav className={styles.navBar}>
+          <ul className={toggleNav ? styles.showNav : ''}>
+            <li><a href="">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Resume</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+          <div className={styles.navToggle} onClick={() => setToggleNav(!toggleNav)}>
+            {
+              toggleNav ? <VscChromeClose /> : <GoThreeBars />
+            }
           </div>
+        </nav>
+        <section className={styles.header}>
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
             <h1 className={styles.nameTitle}><span className={styles.accent}>Likhit Vyas</span> Yarramsetti</h1>

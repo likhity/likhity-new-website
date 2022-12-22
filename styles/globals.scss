@@ -22,20 +22,6 @@ p {
   font-size: 1.5rem;
 }
 
-li {
-  font-size: 1.25rem;
-  // list-style-type: square;
-  list-style: none;
-  &::before {
-    content: '-';
-    color: #f94679;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-}
-
 * {
   box-sizing: border-box;
 }

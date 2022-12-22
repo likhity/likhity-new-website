@@ -47,6 +47,58 @@ $typing-delay: 500ms;
     border-bottom: 1px solid $accent-color;
   }
 
+  .navBar {
+    position: fixed;
+    display: flex;
+    z-index: 5;
+    top: 0;
+    right: 0;
+
+    ul {
+      background-color: $bg-color;
+      box-sizing: content-box;
+      margin: 0;
+      display: flex;
+      padding: 0;
+      transform: translateX(200%);
+      transition: transform 250ms;
+      border-width: 1px;
+      border-top: 0;
+      border-style: solid;
+      border-color: $accent-color;
+      li {
+        list-style-type: none;
+        $padding-top-and-bottom: 0.8rem;
+        margin: 0;
+        overflow: hidden;
+        padding-top: $padding-top-and-bottom;
+        padding-bottom: $padding-top-and-bottom;
+        a {
+          padding: 1rem;
+          &:hover {
+            background-color: $accent-color;
+            color: white;
+          }
+        }
+      }
+      
+      &.showNav {
+        transform: translateX(0%);
+      }
+    }
+
+    .navToggle {
+      list-style-type: none;
+      font-size: 2rem;
+      padding: 0 1rem;
+      z-index: 5;
+      &:hover {
+        color: $accent-color;
+        cursor: pointer;
+      }
+    }
+  }
+
   .header {
   
     padding: 7.5rem;
@@ -56,46 +108,6 @@ $typing-delay: 500ms;
     align-items: center;
     position: relative;
     overflow: hidden;
-
-    .navBar {
-      position: absolute;
-      z-index: 5;
-      background-color: $bg-color;
-      top: 50px;
-      right: 100px;
-      transform: translateX(500%);
-      box-shadow: -60px 1px 75px -15px transparentize(#777, 0.7);
-      animation: fly-in-left 1s ease-in-out calc($typing-duration + $typing-delay + 1s) forwards;
-      ul {
-        box-sizing: content-box;
-        margin: 0;
-        display: flex;
-        padding: 0;
-        li {
-          list-style-type: none;
-          margin: 0;
-          overflow: hidden;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          a {
-            padding: 1rem 1.5rem;
-            &:hover {
-              background-color: $accent-color;
-              color: white;
-            }
-          }
-        }
-      }
-    }
-
-    @keyframes fly-in-left {
-      from {
-        transform: translateX(500%);
-      }
-      to {
-        transform: translateX(0%);
-      }
-    }
   
     .typing {
       font-size: 2.5rem;
@@ -269,6 +281,21 @@ $typing-delay: 500ms;
     }
   }
 
+  .education {
+    li {
+      font-size: 1.25rem;
+      // list-style-type: square;
+      list-style: none;
+      &::before {
+        content: '-';
+        color: #f94679;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
 }
 
 

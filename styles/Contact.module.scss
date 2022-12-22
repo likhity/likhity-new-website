@@ -19,7 +19,7 @@
     align-items: center;
 
     .text {
-      width: 75%;
+      width: 100%;
       p {
         font-size: 1.25rem;
       }
@@ -67,7 +67,6 @@
       flex-direction: column;
   
       .text {
-        width: 50%;
         text-align: center;
         margin-bottom: 2rem;
       }

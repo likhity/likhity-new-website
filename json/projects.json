@@ -1,0 +1,63 @@
+[
+  {
+    "title": "ASU Course Tracker",
+    "description": "A way for students to track the number of seats available for a course. A notification is sent to the user whenever the number of seats changes.",
+    "github": "https://github.com/likhity/asu-course-tracker",
+    "tags": ["Node.js", "Express", "MongoDB"],
+    "link": "/projects/asu-course-tracker"
+  },
+  {
+    "title": "Pizza Shop",
+    "description": "A pizza ordering system built for a fake pizza restaurant named \"SunDevil Pizza\".",
+    "github": "https://github.com/likhity/pizza-shop",
+    "deployment": "https://pizza-shop-team19.herokuapp.com/",
+    "tags": ["Node.js", "Express", "MongoDB", "CSS", "Jest", "Cypress"],
+    "link": "/projects/pizza-shop"
+  },
+  {
+    "title": "The Burger Center",
+    "description": "A landing page for a fake restaurant named \"The Burger Center\". Just wanted to practice my CSS and React skills.",
+    "github": "https://github.com/likhity/the-burger-center",
+    "deployment": "https://likhity.github.io/webdev/the-burger-center",
+    "tags": ["React", "CSS"],
+    "link": "/projects/the-burger-center"
+  },
+  {
+    "title": "Postman Clone",
+    "description": "A very simple clone of postman that uses Axios to make requests.",
+    "github": "https://github.com/likhity/postman-clone",
+    "deployment": "https://likhity.github.io/webdev/postman-clone/index.html",
+    "tags": ["CSS", "Vanilla JS", "Axios", "Parcel"],
+    "link": "/projects/postman-clone"
+  },
+  {
+    "title": "Twitch Chat Analyzer",
+    "description": "Chrome extension that analyzes a twitch stream and reports a percentage positivity of the chat.",
+    "github": "https://github.com/likhity/twitch-stream-chat-analyzer",
+    "tags": ["Python", "Socket.io", "Flask", "NLTK", "Numpy"],
+    "link": "/projects/twitch-stream-chat-analyzer"
+  },
+  {
+    "title": "Old Personal Website",
+    "description": "The old version personal of my personal website. Hideous, I know.",
+    "github": "https://github.com/likhity/likhity.github.io",
+    "deployment": "https://likhity.github.io/webdev/",
+    "tags": ["HTML", "CSS", "JS"],
+    "link": "/projects/old-personal-website"
+  },
+  {
+    "title": "Shoot 'Em Up",
+    "description": "Basic FPS game built with Unity. I initially planned on fully fleshing this game out and releasing on Steam, but I later became more interested in web dev.",
+    "download": "https://likhity.github.io/webdev/Infiltrate.zip",
+    "tags": ["Unity", "C#"],
+    "link": "/projects/shoot-em-up"
+  },
+  {
+    "title": "Motor Skillz",
+    "description": "A simple game for toddlers.",
+    "github": "https://github.com/likhity/likhity.github.io/tree/master/webdev/Motor%20Skillz%20App",
+    "deployment": "https://likhity.github.io/webdev/Motor%20Skillz%20App/index.html",
+    "tags": ["HTML", "CSS", "JS", "C#"],
+    "link": "/projects/shoot-em-up"
+  }
+]

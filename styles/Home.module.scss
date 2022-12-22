@@ -81,9 +81,15 @@
 
   .nameSubtitle {
     font-size: 2rem;
-    font-weight: 500;
     position: relative;
     animation: fly-in 500ms ease-in-out calc($typing-duration + $typing-delay + 1s) backwards;
+  }
+}
+
+.introduction {
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -137,114 +143,6 @@
   h2 {
     margin-bottom: 3.75rem;
   }
-
-  .projects {
-    display: grid;
-    $size: 400px;
-    grid-template-columns: repeat(3, $size);
-    gap: 1rem;
-    padding: 0;
-    list-style-type: none;
-    
-    .project {
-      width: $size;
-      height: $size;
-      $padding: 2rem;
-      background-color: transparentize($accent-color, 0.55);
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      transition-property: background-color, transform;
-      transition-duration: 500ms;
-      transition-timing-function: ease;
-      border-bottom: 5px solid $accent-color;
-      padding: $padding;
-      position: relative;
-      overflow: hidden;
-
-      .icons {
-        position: absolute;
-        top: $padding;
-        right: $padding;
-        font-size: 2rem;
-        z-index: 1;
-        
-        .icon {
-          margin-left: 1rem;
-          transition: color 250ms ease;
-        }
-      }
-      
-      h3 {
-        font-size: 2rem;
-        margin-top: 3.5rem;
-        margin-bottom: 20px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        a {
-          text-decoration: none;
-          transition: color 500ms ease;
-          &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-          }
-          &:hover {
-            color: white;
-          }
-        }
-      }
-
-      .projectDescription {
-        font-size: 1.2rem;
-        font-weight: 400;
-      }
-
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        position: absolute;
-        bottom: $padding;
-        
-        .tag {
-          font-size: 1rem;
-          background-color: transparentize($accent-color, 0.4);
-          padding: 0.25rem 0.75rem;
-          border-radius: 12px;
-          margin: 0;
-          white-space: nowrap;
-        }
-      }
-
-      &:hover {
-        color: white;
-        background-color: transparentize($accent-color, 0.8);
-        transform: translateY(-10px);
-      }
-    }
-  }
-
-  .seeMoreButton {
-    padding: 1rem;
-    border: 1px solid $accent-color;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    transition: background-color 250ms ease;
-    margin-top: 7rem;
-    font-size: 1.1rem;
-
-    &:hover {
-      color: inherit;
-      background-color: transparentize($accent-color, 0.8);
-    }
-  }
 }
 
 .education {
@@ -259,6 +157,17 @@
       width: 1em;
       margin-left: -1em;
     }
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    max-width: 600px;
+    text-align: center;
   }
 }
 
@@ -293,17 +202,5 @@
         }
       }
     }
-  }
-}
-
-.footer {
-  flex: 1;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    font-size: 1rem;
-    margin: 0;
   }
 }

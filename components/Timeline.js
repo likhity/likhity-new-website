@@ -10,7 +10,7 @@ const Left = ({ timeText, start, end, children }) => (
         start && <div className={styles.startTimeline}></div> 
       }
       {
-        end && <div className={styles.endTImeline}></div> 
+        end && <div className={styles.endTimeline}></div> 
       }
     </div>
     <div className={`${styles.timelineElementYear}`}>
@@ -38,6 +38,14 @@ const Right = ({ timeText, start, end, children }) => (
   </div>
 )
 
+const Break = ({ children }) => (
+  <div className={styles.timelineBreak}>
+    {
+      children
+    }
+  </div>
+)
+
 const Timeline = ({ children }) => {
   return (
     <div className={styles.timeline}>
@@ -50,5 +58,6 @@ const Timeline = ({ children }) => {
 
 Timeline.Left = Left;
 Timeline.Right = Right;
+Timeline.Break = Break;
 
 export default Timeline;

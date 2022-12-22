@@ -91,8 +91,34 @@ code, .code {
 .main {
 
   section {
-    padding: 5rem;
-    border-bottom: 1px solid transparentize($color: $accent-color, $amount: 0.6);
+    padding: 7rem 5rem;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      height: 1px;
+      background-color: transparentize($accent-color, 0.5);
+    }
   }
   
+}
+
+.button {
+  padding: 1rem;
+  border: 1px solid $accent-color;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  transition: background-color 250ms ease;
+  font-size: 1.1rem;
+
+  &:hover {
+    color: inherit;
+    background-color: transparentize($accent-color, 0.8);
+  }
 }

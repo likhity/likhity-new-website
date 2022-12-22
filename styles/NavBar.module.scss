@@ -64,8 +64,11 @@
   }
 }
 
-.animation {
+.delayedAnimation {
   animation: fly-in 1s ease calc($typing-duration + $typing-delay + 1.5s) backwards;
+}
+.animation {
+  animation: fly-in 1s ease backwards;
 }
 
 @keyframes fly-in {

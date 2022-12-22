@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/ProjectPage.module.scss'
 
@@ -12,8 +13,12 @@ import { VscGithubAlt } from "react-icons/vsc";
 import { v4 as uuid } from 'uuid';
 
 import { useState, useEffect } from 'react';
+import AlertsProvider, { useAlertsAdd } from "../contexts/AlertsContext";
+import Alerts from './Alerts';
 
 export default function ProjectPage({ project }) {
+
+  const addAlert = useAlertsAdd();
 
   const [markdown, setMarkdown] = useState("");
   const [contributors, setContributors] = useState(undefined);
@@ -63,7 +68,7 @@ export default function ProjectPage({ project }) {
                 {
                   project.github ?
                   project.github === "ask me" ?
-                  <a className={styles.icon} onClick={() => { 
+                  <a className={styles.icon} onClick={() => {
                     addAlert("I cannot make this repo public. If you want to view it, contact me and I can send you a private link.");
                   }}><VscGithubAlt /></a>
                   : <a className={styles.icon} href={project.github} target="_blank" rel="noopener noreferrer"><VscGithubAlt /></a>
@@ -80,9 +85,11 @@ export default function ProjectPage({ project }) {
             <div className={styles.tags}>
                 {
                   project.tags.map(tag => (
-                    <p key={tag} className={styles.tag}>
-                      {tag}
-                    </p>
+                    <Link href={`/projects?tags=${encodeURIComponent(tag)}`} key={tag}>
+                      <a className={styles.tag}>
+                        {tag}
+                      </a>
+                    </Link>
                   ))
                 }
             </div>
@@ -121,10 +128,11 @@ export default function ProjectPage({ project }) {
                 : <p className={styles.readMeTitle}>Loading README.md</p>
                 : project.description.split("\n").map(line => (
                   <p key={uuid()}>{line}</p>
-                ))
-              }
+                  ))
+                }
             </div>
           </div>
+          <Alerts />
         </section>
         <Footer />
       </main>

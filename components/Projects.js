@@ -5,6 +5,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 import { useAlertsAdd } from "../contexts/AlertsContext";
 
 import { v4 as uuid } from "uuid";
+import Link from "next/link";
 
 export default function Projects({ projects }) {
 
@@ -43,9 +44,11 @@ export default function Projects({ projects }) {
             <div className={styles.tags}>
               {
                 project.tags.map(tag => (
-                  <p key={tag} className={styles.tag}>
-                    {tag}
-                  </p>
+                  <Link href={`/projects?tags=${encodeURIComponent(tag)}`} key={tag}>
+                    <a className={styles.tag}>
+                      {tag}
+                    </a>
+                  </Link>
                 ))
               }
             </div>

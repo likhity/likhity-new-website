@@ -1,15 +1,28 @@
 import Head from 'next/head'
+import Link from "next/link";
+import { useRouter } from 'next/router';
 import styles from '../../styles/ProjectsPage.module.scss'
 
 import Projects from '../../components/Projects';
 import NavBar from "../../components/NavBar";
 import Footer from '../../components/Footer';
+import { MdClose } from "react-icons/md";
 
 import projectData from "../../data/projects";
 import Alerts from '../../components/Alerts';
-import AlertsProvider from '../../contexts/AlertsContext';
 
 export default function Index() {
+
+  let projects = projectData;
+
+  const router = useRouter();
+  const { tags } = router.query;
+  
+  if (tags) {
+    const allTags = tags.split(',');
+    projects = projects.filter(project => allTags.some(tag => project.tags.includes(tag)))
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -30,10 +43,23 @@ export default function Index() {
         <section className={styles.projectsSection}>
           <NavBar />
           <h1 className={`text-center`}>All <span className="accent">Projects.</span></h1>
-          <AlertsProvider>
-            <Projects projects={projectData} />
-            <Alerts />
-          </AlertsProvider>
+          {tags && 
+            <div className={styles.tags}>
+              Tags:
+              {
+                tags.split(',').map((tag => (
+                  <p key={tag} className={styles.tag}>
+                    {tag}
+                    <Link href={`/projects?tags=${tags.split(',').filter(t => t != tag).join(',')}`}>
+                      <a><MdClose /></a>
+                    </Link>
+                  </p>
+                )))
+              }
+            </div>
+          }
+          <Projects projects={projects} />
+          <Alerts />
         </section>
         <Footer />
       </main>

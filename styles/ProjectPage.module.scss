@@ -44,6 +44,12 @@
         border-radius: 12px;
         margin: 0;
         white-space: nowrap;
+        text-decoration: none;
+        transition: background-color 250ms ease;
+        &:hover {
+          background-color: $accent-color;
+          color: white;
+        }
       }
     }
 

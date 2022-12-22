@@ -11,12 +11,12 @@ export default function AboutTimeline() {
       <Timeline.Left start={true} timeText="Early 2016">
         <h3 className='h1 mb-4'><span className='code'>HTML</span> &amp; <span className="code">CSS</span></h3>
         <p>I first started building small websites with HTML and CSS when I was in <span className="fw-bold accent">9th grade</span>.</p>
-        <p>I knew the next step was learning JavaScript, but I honestly don't remember why I never did during this time and procrastinated on it for <span className="accent fw-bold">3 years</span>.</p>
       </Timeline.Left>
       <Timeline.Right timeText="Summer 2016">
         <h3 className='h1 mb-4'>Unity &amp; <span className="code">C#</span></h3>
         <p>I got bored of building websites and switched to game development.</p>
         <p>I found the Unity Game Engine, and tried to make some games that would sell on Steam.</p>
+        <p>Those games never sold Steam. (Because I never finished them.)</p>
         <p>Software engineering and problem solving was beginning to feel <span className={`fw-bold accent`}>incredibly fun</span> and something that I thought would be great to do as a career.</p>
       </Timeline.Right>
       <Timeline.Left timeText="Fall 2019">

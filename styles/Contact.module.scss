@@ -81,3 +81,12 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .contact .formSection .text {
+    width: 90%;
+    p {
+      font-size: 1rem;
+    }
+  }
+}

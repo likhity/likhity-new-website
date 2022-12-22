@@ -19,6 +19,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 3px;
+  transition: color 250ms ease;
   &:hover {
     color: $accent-color;
   }

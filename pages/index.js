@@ -9,77 +9,7 @@ import Timeline from '../components/Timeline';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
-const projects = [
-  {
-    title: "ASU Course Tracker",
-    description: "A way for students to track the number of seats available for any course at ASU.",
-    github: "https://github.com/likhity/asu-course-tracker",
-    tags: ["Node.js", "Express", "MongoDB", "JWT", "CSS", "Twilio"],
-    link: "/projects/asu-course-tracker",
-  },
-  {
-    title: "Pizza Shop",
-    description: "A pizza ordering system built for a fake pizza restaurant named \"SunDevil Pizza\".",
-    github: "https://github.com/likhity/pizza-shop",
-    deployment: "https://pizza-shop-team19.herokuapp.com/",
-    tags: ["Node.js", "Express", "MongoDB", "JWT", "CSS", "Cypress"],
-    link: "/projects/pizza-shop",
-  },
-  {
-    title: "The Burger Center",
-    description: "A landing page for a fake restaurant named \"The Burger Center\". Just wanted to practice my CSS and React skills.",
-    github: "https://github.com/likhity/the-burger-center",
-    deployment: "https://likhity.github.io/webdev/the-burger-center",
-    tags: ["React", "CSS"],
-    link: "/projects/the-burger-center",
-  },
-  {
-    title: "Postman Clone",
-    description: "A very simple clone of postman that uses Axios to make requests.",
-    github: "https://github.com/likhity/postman-clone",
-    deployment: "https://likhity.github.io/webdev/postman-clone/index.html",
-    tags: ["CSS", "JS", "Axios", "Parcel"],
-    link: "/projects/postman-clone",
-  },
-  {
-    title: "Twitch Chat Analyzer",
-    description: "Chrome extension that analyzes a twitch stream and reports a percentage positivity of the chat.",
-    github: "https://github.com/likhity/twitch-stream-chat-analyzer",
-    tags: ["Python", "Socket.io", "Flask", "NLTK", "Numpy"],
-    link: "/projects/twitch-stream-chat-analyzer",
-  },
-  {
-    title: "Old Project Portfolio",
-    description: "The old version of my personal website. Hideous, I know.",
-    github: "https://github.com/likhity/likhity.github.io",
-    deployment: "https://likhity.github.io/webdev/",
-    tags: ["HTML", "CSS", "JS"],
-    link: "/projects/old-project-portfolio",
-  },
-  {
-    title: "Shoot 'Em Up",
-    description: "Basic FPS game built with Unity. I initially planned on fully fleshing this game out and releasing on Steam, but I later became more interested in web dev.",
-    download: "https://likhity.github.io/webdev/Infiltrate.zip",
-    tags: ["Unity", "C#"],
-    link: "/projects/shoot-em-up",
-  },
-  {
-    title: "Motor Skillz",
-    description: "A simple game for toddlers.",
-    github: "https://github.com/likhity/likhity.github.io/tree/master/webdev/Motor%20Skillz%20App",
-    deployment: "https://likhity.github.io/webdev/Motor%20Skillz%20App/",
-    tags: ["HTML", "CSS", "JS", "p5.js"],
-    link: "/projects/motor-skillz",
-  },
-  {
-    title: "Color Tools",
-    description: "Simple tools for generating random colors or converting colors from RGB to HEX and vice versa.",
-    github: "https://github.com/likhity/likhity.github.io/tree/master/Color%20Tools",
-    deployment: "https://likhity.github.io/Color%20Tools/",
-    tags: ["HTML", "CSS", "JS"],
-    link: "/projects/color-tools",
-  },
-]
+import projects from "../data/projects";
 
 export default function Home() {
 
@@ -174,7 +104,7 @@ export default function Home() {
         </section>
         <section className={styles.projectsSection}>
           <h2 className={styles.sentence}>Some <span className="fw-bold accent">Projects</span> I've Built.</h2>
-          <Projects projects={projects} />
+          <Projects projects={projects.slice(0, 9)} />
           <a className="button mt-5" href="/projects">See More</a>
         </section>
         <section className={styles.contact}>

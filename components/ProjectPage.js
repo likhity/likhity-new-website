@@ -8,12 +8,14 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { FiExternalLink, FiDownload } from "react-icons/fi";
 import { VscGithubAlt } from "react-icons/vsc";
+import { v4 as uuid } from 'uuid';
 
 import { useState, useEffect } from 'react';
 
 export default function ProjectPage({ project }) {
 
   const [markdown, setMarkdown] = useState("");
+  const [contributors, setContributors] = useState(undefined);
   
   useEffect(() => {
     if (project.markdown) {
@@ -23,7 +25,13 @@ export default function ProjectPage({ project }) {
           setMarkdown(result);
         })
     }
-  }, [markdown, project.markdown]);
+
+    if (project.contributors) {
+      fetch(project.contributors)
+        .then(res => res.json())
+        .then(data => setContributors(data));
+    }
+  }, [markdown, contributors, project.markdown, project.contributors]);
 
   return (
     <div className={styles.container}>
@@ -65,25 +73,36 @@ export default function ProjectPage({ project }) {
             <div className={styles.collaborators}>
               <h3>Contributors</h3>
               {
-                project.collaborated 
-                ? <></>
+                contributors
+                ? contributors.map(contributor => (
+                  <div className={styles.collaborator}>
+                    <img src={contributor.avatar_url} alt={`${contributor.login} GitHub avatar`} />
+                    <a href={contributor.html_url}>{contributor.login}</a>
+                  </div>
+                ))
                 : <div className={styles.collaborator}>
                     <img src="https://avatars.githubusercontent.com/u/73198499?v=4" alt="likhity GitHub" />
-                    <p><a href="https://github.com/likhity">likhity</a></p>
+                    <a href="https://github.com/likhity">likhity</a>
                   </div>
               }
             </div>
             <div className={styles.markdown}>
               {
+                project.markdown ? 
                 markdown
                 ? <>
                     <p className={styles.readMeTitle}>README.md</p>
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    <ReactMarkdown 
+                      transformImageUri={uri => 
+                        uri.startsWith("http") ? uri : `${project.imageBaseUri}${uri}`
+                      }
+                      remarkPlugins={[remarkGfm]}>
                       {markdown}
                     </ReactMarkdown>
                   </>
+                : <p className={styles.readMeTitle}>Loading README.md</p>
                 : project.description.split("\n").map(line => (
-                  <p>{line}</p>
+                  <p key={uuid()}>{line}</p>
                 ))
               }
             </div>

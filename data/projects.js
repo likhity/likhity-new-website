@@ -6,6 +6,7 @@ export default [
     tags: ["Node.js", "Express", "MongoDB", "JWT", "CSS", "Twilio"],
     link: "/projects/asu-course-tracker",
     markdown: "https://raw.githubusercontent.com/likhity/asu-course-tracker/main/README.md",
+    imageBaseUri: "https://raw.githubusercontent.com/likhity/asu-course-tracker/main",
   },
   {
     title: "Pizza Shop",
@@ -15,6 +16,7 @@ export default [
     tags: ["Node.js", "Express", "MongoDB", "JWT", "CSS", "Cypress"],
     link: "/projects/pizza-shop",
     markdown: "https://raw.githubusercontent.com/likhity/pizza-shop/main/README.md",
+    contributors: "https://api.github.com/repos/likhity/pizza-shop/contributors",
   },
   {
     title: "The Burger Center",
@@ -39,8 +41,9 @@ export default [
     description: "Chrome extension that analyzes a twitch stream and reports a percentage positivity of the chat.",
     github: "https://github.com/likhity/twitch-stream-chat-analyzer",
     tags: ["Python", "Socket.io", "Flask", "NLTK", "Numpy"],
-    link: "/projects/twitch-stream-chat-analyzer",
+    link: "/projects/twitch-chat-analyzer",
     markdown: "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main/README.md",
+    imageBaseUri: "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main",
   },
   {
     title: "Old Project Portfolio",

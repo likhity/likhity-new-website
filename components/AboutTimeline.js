@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import styles from '../styles/About.module.scss';
 
 import { HiOutlineExternalLink } from "react-icons/hi";
@@ -51,7 +53,7 @@ export default function AboutTimeline() {
         <p>In it, we had to make a project using <span className={`accent`}>p5.js</span>.</p>
         <p>I revisited my old friends HTML and CSS. I was finally starting to feel programming was fun again.</p>
         <p>I felt I could actually be creative here.</p>
-        <p><a href="https://likhity.github.io/webdev/Motor%20Skillz%20App/index.html" target="_blank">Here<HiOutlineExternalLink /></a> is the project that we built.</p>
+        <p><a href="https://likhity.github.io/webdev/Motor%20Skillz%20App/index.html" target="_blank" rel="noopener noreferrer">Here<HiOutlineExternalLink /></a> is the project that we built.</p>
       </Timeline.Right>
       <Timeline.Left timeText="Spring 2021">
         <h3 className='h1 mb-4'>The <span className="code">Java</span> Days</h3>
@@ -60,7 +62,7 @@ export default function AboutTimeline() {
       <Timeline.Right timeText="Summer 2021">
         <h3 className={`h1 mb-4 ${styles.gold}`}><span className="code">JavaScript</span></h3>
         <p>I still didn't have a good idea on what I should be focusing on.</p>
-        <p>Then one day, I encountered <a href="https://www.youtube.com/@WebDevSimplified" target="_blank">Web Dev Simplified <HiOutlineExternalLink /></a>. And it finally clicked.</p>
+        <p>Then one day, I encountered <a href="https://www.youtube.com/@WebDevSimplified" target="_blank" rel="noopener noreferrer">Web Dev Simplified <HiOutlineExternalLink /></a>. And it finally clicked.</p>
         <p>I fully invested myself into the world of JavaScript, and fell in love with it.</p>
         <p>I realized what I find most joy in: building web applications with JS.</p>
       </Timeline.Right>
@@ -100,7 +102,11 @@ export default function AboutTimeline() {
         <p>Currently in my third year at ASU.</p>
         <p>Just finished introductory courses on AI and Theoretical CS.</p>
         <p>Searching for internships.</p>
-        <p><a href="/contact">Get In Touch<HiOutlineExternalLink /></a></p>
+        <p>
+          <Link href="/contact">
+            <a>Get In Touch<HiOutlineExternalLink /></a>
+          </Link>
+        </p>
       </Timeline.Left>
     </Timeline>
   );

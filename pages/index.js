@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import styles from '../styles/Home.module.scss'
 
 import { Image, Row, Col, Container } from "react-bootstrap";
@@ -21,6 +22,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Hello! My name is Likhit Vyas Yarramsetti. I am currently a junior at ASU studying Computer Science and a future full-stack software engineer and filmmaker. Thank you for taking the time to check out my stuff!" />
         <title>Likhit Vyas Yarramsetti</title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        </style>
       </Head>
 
       <main className="main">
@@ -36,7 +42,7 @@ export default function Home() {
           <Container fluid="sm">
             <Row className="align-items-center justify-content-around me-0">
               <Col xs={12} sm={12} md={4}>
-                <Image src="/headshot.jpg" className={`img-fluid ${styles.headshot} mb-5 mb-md-0`}></Image>
+                <Image src="/headshot.jpg" alt='Head shot photo of Vyas' className={`img-fluid ${styles.headshot} mb-5 mb-md-0`}></Image>
               </Col>
               <Col xs={12} sm={12} md={7}  className="">
                 <h2 className={`mb-4 ${styles.sentence}`}>Yeah, I kinda have a long name. You can call me <span className={`fw-bold accent`}>Vyas.</span></h2>
@@ -44,7 +50,9 @@ export default function Home() {
                 <p>I've been learning about and building software for over 5 years. I first started creating games using Unity in 2016.</p>
                 <p>Today, I mostly develop web applications using technologies like React, SASS, Node.js, Express, and MongoDB to name a few.</p>
                 <p>As a hobby, I enjoy learning about film and filmmaking.</p>
-                <a href="/journey" className='button mt-4'>Learn more about my coding journey</a>
+                <Link href="/journey">
+                  <a className='button mt-4'>Learn more about my coding journey</a>
+                </Link>
               </Col>
             </Row>
           </Container>
@@ -64,7 +72,11 @@ export default function Home() {
             </Timeline.Left>
             <Timeline.Right end={true} timeText="Present">
               <h3 className="h1">Looking for internship opportunities.</h3>
-              <p><a href="/contact" target="_blank">Get In Touch<HiOutlineExternalLink /></a></p>
+              <p>
+                <Link href="/contact" target="_blank">
+                  <a>Get In Touch<HiOutlineExternalLink /></a>
+                </Link>
+              </p>
             </Timeline.Right>
           </Timeline>
         </section>
@@ -83,7 +95,7 @@ export default function Home() {
                 <h4 className="fw-bold">Current GPA: <span className={`accent`}>3.85</span></h4>
               </Col>
               <Col>
-                <Image src="/asu.jpg" width={500} className="img-fluid mt-4 mt-md-0"></Image>
+                <Image src="/asu.jpg" alt='Vyas walking in ASU campus' width={500} className="img-fluid mt-4 mt-md-0"></Image>
               </Col>
             </Row>
           </Container>
@@ -105,13 +117,17 @@ export default function Home() {
         <section className={styles.projectsSection}>
           <h2 className={`${styles.sentence} text-center`}>Some <span className="fw-bold accent">Projects</span> I've Built.</h2>
           <Projects projects={projects.slice(0, 9)} />
-          <a className="button mt-5" href="/projects">See More</a>
+          <Link href="/projects">
+            <a className="button mt-5">See More</a>
+          </Link>
         </section>
         <section className={styles.contact}>
           <h2 className={`${styles.sentence} text-center mb-5`}>Let's <span className="fw-bold accent">Talk.</span></h2>
           <p className='mt-5'>I am currently looking for internship opportunities for the period July 2023 - August 2023.</p>
           <p className="mb-5" >My inbox is always open.</p>
-          <a href="/contact" className="button mt-5">Contact Me</a>
+          <Link href="/contact">
+            <a className="button mt-5">Contact Me</a>
+          </Link>
         </section>
       </main>
       <Footer />

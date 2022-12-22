@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/Footer.module.scss";
 
 import { Container, Row, Col } from "react-bootstrap";
@@ -25,11 +26,33 @@ export default function Footer() {
           <Col>
             <h3 className="mb-4">Links</h3>
             <ul className={styles.links}>
-              <li><a href="/">Home</a></li>
-              <li><a href="/journey">Journey</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="#" className={styles.resume}><FiDownload />Résumé</a></li>
+              <li>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/journey">
+                  <a>Journey</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects">
+                  <a>Projects</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact">
+                  <a>Contact</a>
+                </Link>
+              </li>
+              <li>
+                <a 
+                  href="https://likhity.github.io/webdev/Likhit_Vyas_Yarramsetti_Resume_2022.pdf" 
+                  className={styles.resume}>
+                  <FiDownload />Résumé
+                </a>
+              </li>
             </ul>
             <a href="mailto:y.vyas.likhit@gmail.com" className="fs-5"> <FiMail /> y.vyas.likhit@gmail.com</a>
         </Col>

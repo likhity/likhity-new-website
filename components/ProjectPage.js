@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image';
 import styles from '../styles/ProjectPage.module.scss'
 
 import NavBar from "../components/NavBar";
@@ -31,7 +32,7 @@ export default function ProjectPage({ project }) {
         .then(res => res.json())
         .then(data => setContributors(data));
     }
-  }, [markdown, contributors, project.markdown, project.contributors]);
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -41,6 +42,11 @@ export default function ProjectPage({ project }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Hello! My name is Likhit Vyas Yarramsetti. I am currently a junior at ASU studying Computer Science and a future full-stack software engineer and filmmaker. Thank you for taking the time to check out my stuff!" />
         <title>{`${project.title} - Likhit Vyas Yarramsetti`}</title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        </style>
       </Head>
 
       <main className="main">
@@ -87,12 +93,12 @@ export default function ProjectPage({ project }) {
                 contributors
                 ? contributors.map(contributor => (
                   <div key={contributor.node_id} className={styles.collaborator}>
-                    <img src={contributor.avatar_url} alt={`${contributor.login} GitHub avatar`} />
+                    <Image width={30} height={30} src={contributor.avatar_url} alt={`${contributor.login} GitHub avatar`} />
                     <a href={contributor.html_url}>{contributor.login}</a>
                   </div>
                 ))
                 : <div className={styles.collaborator}>
-                    <img src="https://avatars.githubusercontent.com/u/73198499?v=4" alt="likhity GitHub" />
+                    <Image width={30} height={30} src="https://avatars.githubusercontent.com/u/73198499?v=4" alt="likhity GitHub" />
                     <a href="https://github.com/likhity">likhity</a>
                   </div>
               }

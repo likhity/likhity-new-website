@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import styles from "../styles/NavBar.module.scss";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -12,21 +13,52 @@ export default function NavBar({ delayedAnimation }) {
 
   return (
     <nav className={`${styles.navBar} ${delayedAnimation ? styles.delayedAnimation : styles.animation}`}>
+      <Link href="/">
+        <a className={styles.homeLink}>L<span className="accent">V</span>Y</a>
+      </Link>
       <ul className={styles.showNav}>
-        <li><a href="/journey">Journey</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/resume" className={styles.resume}>Résumé</a></li>
+        <li>
+          <Link href="/journey">
+            <a>Journey</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/projects">
+            <a>Projects</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact">
+            <a>Contact</a>
+          </Link>
+        </li>
+        <li>
+          <a href="https://likhity.github.io/webdev/Likhit_Vyas_Yarramsetti_Resume_2022.pdf" className={styles.resume}>Résumé</a>
+        </li>
       </ul>
       <button onClick={() => setShowMobileNav(prev => !prev)} className={styles.mobileNavButton}>
         {showMobileNav ? <MdClose /> : <GiHamburgerMenu />}
       </button>
       <div className={`${styles.mobileNav} ${showMobileNav ? styles.showMobileNav : styles.hideMobileNav}`}>
         <ul>
-          <li><a href="/journey">Journey</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/resume" className={styles.resume}>Résumé</a></li>
+          <li>
+            <Link href="/journey">
+              <a>Journey</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/projects">
+              <a>Projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
+          </li>
+          <li>
+            <a href="https://likhity.github.io/webdev/Likhit_Vyas_Yarramsetti_Resume_2022.pdf" className={styles.resume}>Résumé</a>
+          </li>
         </ul>
       </div>
     </nav>

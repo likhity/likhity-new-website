@@ -52,7 +52,7 @@ export default function Home() {
                 <p>Today, I mostly develop web applications using technologies like React, SASS, Node.js, Express, and MongoDB to name a few.</p>
                 <p>As a hobby, I enjoy learning about film and filmmaking.</p>
                 <Link href="/journey">
-                  <a className='button mt-4'>Learn more about my coding journey</a>
+                  <a className='button mt-4'>Learn more about my experience</a>
                 </Link>
               </Col>
             </Row>

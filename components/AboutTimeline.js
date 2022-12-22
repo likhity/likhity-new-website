@@ -51,7 +51,7 @@ export default function AboutTimeline() {
         <p>In it, we had to make a project using <span className={`accent`}>p5.js</span>.</p>
         <p>I revisited my old friends HTML and CSS. I was finally starting to feel programming was fun again.</p>
         <p>I felt I could actually be creative here.</p>
-        <p><a href="https://likhity.github.io/webdev/Motor%20Skillz%20App/index.html" target="_blank" rel="noopener noreferrer">Here<HiOutlineExternalLink /></a> is the project that we built.</p>
+        <p><a href="/projects/motor-skillz" target="_blank" rel="noopener noreferrer">Here<HiOutlineExternalLink /></a> is the project that we built.</p>
       </Timeline.Right>
       <Timeline.Left timeText="Spring 2021">
         <h3 className='h1 mb-4'><span className="code">Java</span></h3>

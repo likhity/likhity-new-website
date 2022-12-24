@@ -37,6 +37,10 @@
       a {
         font-size: 1.25rem;
         margin-right: -4px;
+
+        &:hover {
+          color: black;
+        }
       }
     }
 

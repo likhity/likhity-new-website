@@ -44,6 +44,7 @@ export default [
     link: "/projects/twitch-chat-analyzer",
     markdown: "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main/README.md",
     imageBaseUri: "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main",
+    contributors: "https://api.github.com/repos/likhity/pizza-shop/contributors",
   },
   {
     title: "Old Project Portfolio",

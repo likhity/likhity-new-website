@@ -47,11 +47,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a 
-                  href="https://likhity.github.io/webdev/Likhit_Vyas_Yarramsetti_Resume_2022.pdf" 
-                  className={styles.resume}>
-                  <FiDownload />Résumé
-                </a>
+                <Link href="/resume.pdf">
+                  <a 
+                    className={styles.resume}>
+                    <FiDownload />Résumé
+                  </a>
+                </Link>
               </li>
             </ul>
             <a href="mailto:y.vyas.likhit@gmail.com" className="fs-5"> <FiMail /> y.vyas.likhit@gmail.com</a>

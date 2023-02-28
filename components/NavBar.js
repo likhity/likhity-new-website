@@ -63,7 +63,9 @@ export default function NavBar({ delayedAnimation }) {
             </Link>
           </li>
           <li>
-            <a href="https://likhity.github.io/webdev/Likhit_Vyas_Yarramsetti_Resume_2022.pdf" className={styles.resume}>Résumé</a>
+          <Link href="/resume.pdf">
+            <a className={styles.resume}>Résumé</a>
+          </Link>
           </li>
         </ul>
         <ul className={styles.socialLinks}>

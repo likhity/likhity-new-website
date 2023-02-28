@@ -22,11 +22,6 @@ export default function NavBar({ delayedAnimation }) {
       </Link>
       <ul className={styles.showNav}>
         <li>
-          <Link href="/journey">
-            <a>Journey</a>
-          </Link>
-        </li>
-        <li>
           <Link href="/projects">
             <a>Projects</a>
           </Link>
@@ -47,11 +42,6 @@ export default function NavBar({ delayedAnimation }) {
       </button>
       <div className={`${styles.mobileNav} ${showMobileNav ? styles.showMobileNav : styles.hideMobileNav}`}>
         <ul className={styles.navLinks}>
-          <li>
-            <Link href="/journey">
-              <a>Journey</a>
-            </Link>
-          </li>
           <li>
             <Link href="/projects">
               <a>Projects</a>

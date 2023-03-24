@@ -51,7 +51,7 @@ export default [
     description: "C++ program that reads and parses a context-free grammar. Outputs requested information about the grammar.",
     github: "https://github.com/likhity/cfg-parser",
     tags: ["C++"],
-    link: "/projects/context-free-grammar-parser",
+    link: "/projects/cfg-parser",
     markdown: "https://raw.githubusercontent.com/likhity/cfg-parser/master/README.md",
   },
   {

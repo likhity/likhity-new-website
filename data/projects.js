@@ -47,7 +47,7 @@ export default [
     contributors: "https://api.github.com/repos/likhity/twitch-stream-chat-analyzer/contributors",
   },
   {
-    title: "Context-Free Grammar Parser",
+    title: "CFG Parser",
     description: "C++ program that reads and parses a context-free grammar. Outputs requested information about the grammar.",
     github: "https://github.com/likhity/cfg-parser",
     tags: ["C++"],

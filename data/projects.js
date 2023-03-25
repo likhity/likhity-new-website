@@ -19,14 +19,6 @@ export default [
     contributors: "https://api.github.com/repos/likhity/pizza-shop/contributors",
   },
   {
-    title: "CFG Parser",
-    description: "C++ program that reads and parses a context-free grammar. Outputs requested information about the grammar.",
-    github: "https://github.com/likhity/cfg-parser",
-    tags: ["C++"],
-    link: "/projects/cfg-parser",
-    markdown: "https://raw.githubusercontent.com/likhity/cfg-parser/master/README.md",
-  },
-  {
     title: "Twitch Chat Analyzer",
     description: "Chrome extension that analyzes a twitch stream and reports a percentage positivity of the chat.",
     github: "https://github.com/likhity/twitch-stream-chat-analyzer",
@@ -35,6 +27,21 @@ export default [
     markdown: "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main/README.md",
     imageBaseUri: "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main",
     contributors: "https://api.github.com/repos/likhity/twitch-stream-chat-analyzer/contributors",
+  },
+  {
+    title: "CFG Parser",
+    description: "C++ program that reads and parses a context-free grammar. Outputs requested information about the grammar.",
+    github: "https://github.com/likhity/cfg-parser",
+    tags: ["C++"],
+    link: "/projects/cfg-parser",
+    markdown: "https://raw.githubusercontent.com/likhity/cfg-parser/master/README.md",
+  },
+  {
+    title: "Shoot 'Em Up",
+    description: "Basic FPS game built with Unity. I initially planned on fully fleshing this game out and releasing on Steam, but I later became more interested in web dev.",
+    download: "https://likhity.github.io/webdev/Infiltrate.zip",
+    tags: ["Unity", "C#"],
+    link: "/projects/shoot-'em-up",
   },
   {
     title: "The Burger Center",
@@ -61,13 +68,6 @@ export default [
     deployment: "https://likhity.github.io/webdev/",
     tags: ["HTML", "CSS", "JS"],
     link: "/projects/old-project-portfolio",
-  },
-  {
-    title: "Shoot 'Em Up",
-    description: "Basic FPS game built with Unity. I initially planned on fully fleshing this game out and releasing on Steam, but I later became more interested in web dev.",
-    download: "https://likhity.github.io/webdev/Infiltrate.zip",
-    tags: ["Unity", "C#"],
-    link: "/projects/shoot-'em-up",
   },
   {
     title: "Motor Skillz",

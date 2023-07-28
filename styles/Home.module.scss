@@ -177,6 +177,12 @@
       margin-left: -1em;
     }
   }
+  p {
+    font-size: 1.25rem;
+    &:last-of-type {
+        margin-bottom: -20px;
+    }
+  }
 }
 
 .contact {

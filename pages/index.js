@@ -85,7 +85,9 @@ export default function Home() {
           <Container fluid="sm">
             <Row className="align-items-center">
               <Col xs={12} sm={12} md={7}  className="me-0 me-md-5">
-                <h2 className={styles.sentence}>I'm currently a <span className={`accent`}>junior</span> studying <span className={`d-block mt-2 mb-2 code`}>Computer Science, B.S.</span> @ <span className={`fw-bold accent`}>Arizona State University</span> expecting to graduate on <span className={`d-inline-block mt-2 accent`}>May 2024</span>.</h2>
+                <h2 className={styles.sentence}>I'm currently a <span className={`accent`}>senior</span> studying <span className={`d-block mt-2 mb-2 code`}>Computer Science</span> at <span className={`fw-bold accent`}>Arizona State University</span>.</h2>
+                <p className='mt-3'>I am also pursuing an M.S. degree in Robotics & Autonomous Systems (AI).</p>
+                <p>Expecting to graduate May 2025.</p>
                 <h4 className="fw-bold mt-5 mb-3">Relevant Course Work</h4>
                 <ul>
                   <li>Data Structures &amp; Algorithms</li>

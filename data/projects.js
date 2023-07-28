@@ -19,6 +19,16 @@ export default [
     contributors: "https://api.github.com/repos/likhity/pizza-shop/contributors",
   },
   {
+    title: "PhotoShare",
+    description: "A photo-sharing application where users can create albums, post photos, tag their photos, view others' photos, like, comment, etc.",
+    github: "https://github.com/likhity/photoshare-backend",
+    tags: ["React", "React Router", "Python", "Flask", "PostgreSQL", "JWT", "AWS S3", "CSS"],
+    link: "/projects/photoshare",
+    markdown: "https://raw.githubusercontent.com/likhity/photoshare-backend/master/README.md",
+    imageBaseUri: "https://raw.githubusercontent.com/likhity/photoshare-backend/master",
+    contributors: "https://api.github.com/repos/likhity/photoshare-backend/contributors"
+  },
+  {
     title: "Twitch Chat Analyzer",
     description: "Chrome extension that analyzes a twitch stream and reports a percentage positivity of the chat.",
     github: "https://github.com/likhity/twitch-stream-chat-analyzer",

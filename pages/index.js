@@ -64,11 +64,10 @@ export default function Home() {
             <Timeline.Left start={true} timeText="May 2022 - August 2022">
               <h3 className="h1 mb-4">React/TypeScript Intern <span className='accent'>@ <a href="https://iqm.com/">IQM Corporation</a></span></h3>
               <ul className="accentList">
-                <li>Wrote modern, performant code for the all of the company's main projects.</li>
-                <li>Worked with technologies like TypeScript, React, Sass, and Jenkins.</li>
-                <li>Learned how to effectively work in an agile team using Git, JIRA, BitBucket, & Confluence.</li>
-                <li>Developed a bunch of new features and performed numerous bug fixes that improved clients' user experience.</li>
-                <li>Worked on a complete overhaul of the main website, which allowed the company to generate more clients.</li>
+                <li>Wrote modern, performant code in TypeScript, React, and SASS for the company's main suite of ad campaign management web apps.</li>
+                <li>Worked in an agile environment using Git, BitBucket, Jenkins, Jira & Confluence.</li>
+                <li>Developed new features and performed numerous bug fixes that improved clients' user experience.</li>
+                <li>Worked on a complete overhaul of the main website (<a href="https://iqm.com/">iqm.com</a>) using Remix.js and Bootstrap.</li>
               </ul>
             </Timeline.Left>
             <Timeline.Right end={true} timeText="Present">

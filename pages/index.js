@@ -47,9 +47,9 @@ export default function Home() {
               </Col>
               <Col xs={12} sm={12} md={7}  className="">
                 <h2 className={`mb-4 ${styles.sentence}`}>Yeah, I kinda have a long name. You can call me <span className={`fw-bold accent`}>Vyas.</span></h2>
-                <p>Hi, I'm a software engineer.</p>
-                <p>I've been learning about and building software for over 5 years. I first started creating games using Unity in 2016.</p>
-                <p>Today, I mostly develop web applications using technologies like React, SASS, Node.js, Express, and MongoDB to name a few.</p>
+                <p>I'm a software engineer.</p>
+                <p>I've been learning about and building software for over 5 years.</p>
+                <p>I first started building 3D games using the Unity game engine in 2016. Today, I mostly develop web applications using technologies like React, Node.js, Flask, PostgreSQL and MongoDB to name a few.</p>
                 <p>As a hobby, I enjoy learning about film and filmmaking.</p>
                 {/* <Link href="/journey">
                   <a className='button mt-4'>Learn more about my experience</a>

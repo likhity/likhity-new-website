@@ -126,7 +126,7 @@ export default [
   },
   {
     title: "Snake",
-    description: "Simple snake game.\nA lot of the game logic was built using a tutorial.",
+    description: "Simple snake game.",
     deployment: "https://likhity.github.io/webdev/Snake/index.html",
     github: "https://github.com/likhity/likhity.github.io/tree/master/webdev/Snake",
     tags: ["JS", "CSS"],
@@ -134,7 +134,7 @@ export default [
   },
   {
     title: "Tic Tac Toe",
-    description: "Simple Tic Tac Toe game.\nA lot of the game logic was built using a tutorial.",
+    description: "Simple Tic Tac Toe game.",
     deployment: "https://likhity.github.io/webdev/Tic%20Tac%20Toe/index.html",
     github: "https://github.com/likhity/likhity.github.io/tree/master/webdev/Tic%20Tac%20Toe",
     tags: ["JS", "CSS"],

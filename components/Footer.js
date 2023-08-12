@@ -20,7 +20,7 @@ export default function Footer() {
               <li><a href="https://github.com/likhity"><FiGithub /> GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/likhit-vyas/"> <BsLinkedin /> LinkedIn</a></li>
               <li><a href="https://www.instagram.com/ylikhit/"> <AiOutlineInstagram /> Instagram</a></li>
-              <li><a href="https://twitter.com/YLikhit"> <FiTwitter /> Twitter</a></li>
+              <li><a href="https://twitter.com/YLikhit"> <FiTwitter /> X</a></li>
             </ul>
           </Col>
           <Col>

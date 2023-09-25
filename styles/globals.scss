@@ -99,6 +99,7 @@ code {
   section {
     padding: 7rem 5rem;
     position: relative;
+    background: url('/background.svg');
     &::after {
       content: "";
       display: block;

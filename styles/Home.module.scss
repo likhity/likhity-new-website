@@ -84,6 +84,43 @@
     font-size: 2rem;
     position: relative;
     animation: fly-in 500ms ease-in-out calc($typing-duration + $typing-delay + 1s) backwards;
+}
+
+.downPointer {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fly-in 500ms ease-in-out calc($typing-duration + $typing-delay + 3s) backwards;
+    
+    span {
+      margin-bottom: 5px;
+      animation: fade-out 500ms linear calc($typing-duration + $typing-delay + 6s) forwards;
+    }
+    svg {
+      font-size: 2.75rem;
+      color: $accent-color;
+      animation: point 3s ease-in-out infinite backwards;
+    }
+  }
+
+  @keyframes point {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+  }
+
+  @keyframes fade-out {
+    to {
+        opacity: 0;
+    }
   }
 }
 

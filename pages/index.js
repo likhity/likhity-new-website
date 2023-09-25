@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.scss'
 
 import { Image, Row, Col, Container } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { BsChevronDown } from "react-icons/bs";
 
 import NavBar from '../components/NavBar';
 import Timeline from '../components/Timeline';
@@ -37,6 +38,10 @@ export default function Home() {
             <p className={styles.typing}>Hello, my name is</p>
             <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> Yarramsetti</h1>
             <p className={styles.nameSubtitle}>Software Engineer</p>
+          </div>
+          <div className={styles.downPointer}>
+            <span>Scroll</span>
+            <BsChevronDown />
           </div>
         </section>
         <section className={styles.introduction}>

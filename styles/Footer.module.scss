@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: url('/background.svg');
   color: lighten($bg-color, 75%);
   h3 {
     font-size: 1.75rem;

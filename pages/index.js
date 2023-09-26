@@ -92,7 +92,7 @@ export default function Home() {
                 <h2 className={styles.sentence}>I'm currently a <span className={`accent`}>senior</span> studying <span className={`d-block mt-2 mb-2 code`}>Computer Science</span> at <span className={`fw-bold accent`}>Arizona State University</span>.</h2>
                 <p className='mt-3'>I am also pursuing an M.S. degree in Robotics & Autonomous Systems (AI).</p>
                 <p>Expecting to graduate May 2025.</p>
-                <h4 className="fw-bold mt-5 mb-3">Relevant Course Work</h4>
+                <h4 className="fw-bold mt-5 mb-3">Favorite Courses</h4>
                 <ul>
                   <li>Data Structures &amp; Algorithms</li>
                   <li>Theoretical Computer Science</li>

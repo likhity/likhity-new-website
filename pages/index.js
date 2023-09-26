@@ -74,14 +74,20 @@ export default function Home() {
                 <li>Worked on a complete overhaul of the main website (<a href="https://iqm.com/">iqm.com</a>) using Remix.js and Bootstrap.</li>
               </ul>
             </Timeline.Left>
-            <Timeline.Right end={true} timeText="Present">
-              <h3 className="h1">Looking for internship opportunities.</h3>
+            <Timeline.Right timeText="August 2023 - Present">
+              <h3 className="h1 mb-4">Technical Instructor <span className='accent'>@ <a href="https://icodeschool.com/">iCode Chandler</a></span></h3>
+              <ul className="accentList">
+                <li>Teaching introductory engineering concepts, robotics, programming using Block code languages (Scratch/Vex Go) and basic web development (HTML/CSS) to children of ages 8-10.</li>
+              </ul>
+            </Timeline.Right>
+            <Timeline.Left end={true} timeText="Present">
+              <h3 className="h1">Looking for Summer 2024 internship opportunities.</h3>
               <p>
                 <Link href="/contact" target="_blank">
                   <a>Get In Touch<HiOutlineExternalLink /></a>
                 </Link>
               </p>
-            </Timeline.Right>
+            </Timeline.Left>
           </Timeline>
         </section>
         <section className={styles.education}>

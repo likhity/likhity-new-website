@@ -88,23 +88,24 @@
 
 .downPointer {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     animation: fly-in 500ms ease-in-out calc($typing-duration + $typing-delay + 3s) backwards;
     
-    span {
+    &::before {
+      content: "Learn more";
       margin-bottom: 5px;
       animation: fade-out 500ms linear calc($typing-duration + $typing-delay + 6s) forwards;
     }
     svg {
-      font-size: 2.75rem;
-      animation: point 3s ease-in-out infinite backwards;
+      font-size: 2.5rem;
+      animation: point-down 3s ease-in-out infinite backwards;
     }
   }
 
-  @keyframes point {
+  @keyframes point-down {
     0% {
         transform: translateY(-5px);
     }

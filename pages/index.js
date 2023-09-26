@@ -40,7 +40,6 @@ export default function Home() {
             <p className={styles.nameSubtitle}>Software Engineer</p>
           </div>
           <div className={styles.downPointer}>
-            <span>Scroll</span>
             <BsChevronDown />
           </div>
         </section>

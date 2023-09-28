@@ -127,7 +127,7 @@ export default function Home() {
           </ul>
         </section>
         <section className={styles.projectsSection}>
-          <h2 className={`${styles.sentence} text-center`}>Some <span className="fw-bold accent">Projects</span> I've Built.</h2>
+          <h2 className={`${styles.sentence} text-center`}>Some <span className="fw-bold accent">Projects</span> I Built.</h2>
           <Projects projects={projects.slice(0, 9)} />
           <Link href="/projects">
             <a className="button mt-5">See More</a>

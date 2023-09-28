@@ -40,6 +40,10 @@
           text-decoration: none;
         }
 
+        h3 span:not(.accent) {
+            white-space: nowrap !important;
+        }
+
         .startTimeline {
           position: absolute;
           height: 51%;
@@ -86,6 +90,10 @@
 
         h3 a {
           text-decoration: none;
+        }
+
+        h3 span:not(.accent) {
+            white-space: nowrap !important;
         }
       }
       

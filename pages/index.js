@@ -66,7 +66,7 @@ export default function Home() {
           <h2 className={`mb-5 fw-bold ${styles.sentence} text-center`}>Where I've <span className="accent">Worked.</span></h2>
           <Timeline>
             <Timeline.Left start={true} timeText="May 2022 - August 2022">
-              <h3 className="h1 mb-4">React/TypeScript Intern <span className='accent'>@ <a href="https://iqm.com/">IQM Corporation</a></span></h3>
+              <h3 className="h1 mb-4"><span>React/TypeScript Intern</span> <span className='accent'>@ <a href="https://iqm.com/">IQM Corporation</a></span></h3>
               <ul className="accentList">
                 <li>Wrote modern, performant code in TypeScript, React, and SASS for the company's main suite of ad campaign management web apps.</li>
                 <li>Worked in an agile environment using Git, BitBucket, Jenkins, Jira & Confluence.</li>
@@ -75,7 +75,7 @@ export default function Home() {
               </ul>
             </Timeline.Left>
             <Timeline.Right timeText="August 2023 - Present">
-              <h3 className="h1 mb-4">Computer Science Instructor <span className='accent'>@ <a href="https://icodeschool.com/">iCode Chandler</a></span></h3>
+              <h3 className="h1 mb-4"><span>Computer Science Instructor</span> <span className='accent'>@ <a href="https://icodeschool.com/">iCode Chandler</a></span></h3>
               <ul className="accentList">
                 <li>Teaching introductory engineering concepts, robotics, programming using Block code languages (Scratch/Vex Go) and basic web development (HTML/CSS) to children of ages 8-10.</li>
               </ul>

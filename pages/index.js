@@ -101,7 +101,7 @@ export default function Home() {
                 <ul>
                   <li>Data Structures &amp; Algorithms</li>
                   <li>Theoretical Computer Science</li>
-                  <li>Linear Algebra</li>
+                  <li>Database Management</li>
                   <li>Probability &amp; Statistics</li>
                 </ul>
                 <h4 className="fw-bold">Current GPA: <span className={`accent`}>3.83</span></h4>
@@ -123,7 +123,7 @@ export default function Home() {
             <li className={`h1 ${styles.skill}`}>MongoDB <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>Git <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>Sass <p>1.5 years</p></li>
-            <li className={`h1 ${styles.skill}`}>TypeScript <p>6 months</p></li>
+            <li className={`h1 ${styles.skill}`}>TypeScript <p>1 year</p></li>
           </ul>
         </section>
         <section className={styles.projectsSection}>

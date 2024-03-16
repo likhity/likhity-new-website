@@ -50,11 +50,11 @@ export default function Home() {
                 <Image src="/headshot.jpg" alt='Head shot photo of Vyas' className={`img-fluid ${styles.headshot} mb-5 mb-md-0`}></Image>
               </Col>
               <Col xs={12} sm={12} md={7}  className="">
-                <h2 className={`mb-4 ${styles.sentence}`}>Yeah, I kinda have a long name. You can call me <span className={`fw-bold accent`}>Vyas.</span></h2>
+                <h2 className={`mb-4 ${styles.sentence}`}>Yeah, I kinda have a long name. You can call me <span className={`fw-bold accent`}>Vyas</span>.</h2>
                 <p>I'm a software engineer.</p>
                 <p>I've been learning about and building software for over 5 years.</p>
                 <p>I first started building 3D games using the Unity game engine in 2016.</p>
-                <p>Today, I mostly develop web applications using technologies like <span style="display: block">React, Node.js, Flask, PostgreSQL and MongoDB.</span></p>
+                <p>Today, I mostly develop web applications using technologies like <span className='d-block'>React, Node.js, Flask, PostgreSQL and MongoDB.</span></p>
                 <p>I also <i>really</i> enjoy C++.</p>
                 <p>As a hobby, I learn about film and filmmaking.</p>
               </Col>

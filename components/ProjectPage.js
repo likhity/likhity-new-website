@@ -10,10 +10,11 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { FiExternalLink, FiDownload } from "react-icons/fi";
 import { VscGithubAlt } from "react-icons/vsc";
+import { IoIosHammer } from "react-icons/io";
 import { v4 as uuid } from 'uuid';
 
 import { useState, useEffect } from 'react';
-import AlertsProvider, { useAlertsAdd } from "../contexts/AlertsContext";
+import { useAlertsAdd } from "../contexts/AlertsContext";
 import Alerts from './Alerts';
 
 export default function ProjectPage({ project }) {
@@ -61,7 +62,7 @@ export default function ProjectPage({ project }) {
           <div className={styles.heading}>
             <div className='d-flex align-items-center justify-content-between'>
               <div className={styles.title}>
-                <p>Project</p>
+                <p><IoIosHammer /> Project</p>
                 <h1>{project.title}</h1>
               </div>
               <div className={styles.icons}>

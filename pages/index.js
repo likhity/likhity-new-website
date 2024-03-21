@@ -117,12 +117,12 @@ export default function Home() {
             <li className={`h1 ${styles.skill}`}>JavaScript <p>3 years</p></li>
             <li className={`h1 ${styles.skill}`}>Python <p>3 years</p></li>
             <li className={`h1 ${styles.skill}`}>C++ <p>2 years</p></li>
-            <li className={`h1 ${styles.skill}`}>TypeScript <p>1 year</p></li>
-            <li className={`h1 ${styles.skill}`}>React.js <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>Node.js <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>Express.js <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>MongoDB <p>2 years</p></li>
-            <li className={`h1 ${styles.skill}`}>Git <p>2 years</p></li>
+            <li className={`h1 ${styles.skill}`}>React.js <p>2 years</p></li>
+            <li className={`h1 ${styles.skill}`}>TypeScript <p>1 year</p></li>
+            <li className={`h1 ${styles.skill}`}>Git <p>3 years</p></li>
           </ul>
         </section>
         <section className={styles.projectsSection}>

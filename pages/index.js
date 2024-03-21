@@ -114,15 +114,15 @@ export default function Home() {
         <section className={styles.skillsSection}>
           <h2 className={`${styles.sentence} text-center`}>Yeah, I got <span className="fw-bold accent">Skills.</span></h2>
           <ul className={styles.skills}>
-            <li className={`h1 ${styles.skill}`}>HTML/CSS <p>3 years</p></li>
-            <li className={`h1 ${styles.skill}`}>JS <p>2.5-3 years</p></li>
-            <li className={`h1 ${styles.skill}`}>React <p>2 years</p></li>
+            <li className={`h1 ${styles.skill}`}>JavaScript <p>3 years</p></li>
+            <li className={`h1 ${styles.skill}`}>Python <p>3 years</p></li>
+            <li className={`h1 ${styles.skill}`}>C++ <p>2 years</p></li>
+            <li className={`h1 ${styles.skill}`}>TypeScript <p>1 year</p></li>
+            <li className={`h1 ${styles.skill}`}>React.js <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>Node.js <p>2 years</p></li>
-            <li className={`h1 ${styles.skill}`}>Express <p>2 years</p></li>
+            <li className={`h1 ${styles.skill}`}>Express.js <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>MongoDB <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>Git <p>2 years</p></li>
-            <li className={`h1 ${styles.skill}`}>Sass <p>1.5 years</p></li>
-            <li className={`h1 ${styles.skill}`}>TypeScript <p>1 year</p></li>
           </ul>
         </section>
         <section className={styles.projectsSection}>

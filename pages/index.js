@@ -67,16 +67,16 @@ export default function Home() {
             <Timeline.Left start={true} timeText="May 2022 - August 2022">
               <h3 className="h1 mb-4"><span>React/TypeScript Intern</span> <span className='accent'>@ <a href="https://iqm.com/">IQM Corporation</a></span></h3>
               <ul className="accentList">
-                <li>Wrote modern, performant code in TypeScript, React, and SASS for the company's main suite of ad campaign management web apps.</li>
-                <li>Worked in an agile environment using Git, BitBucket, Jenkins, Jira & Confluence.</li>
-                <li>Developed new features and performed numerous bug fixes that improved clients' user experience.</li>
-                <li>Worked on a complete overhaul of the main website (<a href="https://iqm.com/">iqm.com</a>) using Remix.js and Bootstrap.</li>
+                <li>Crafted modern, performant, reliable code in TypeScript, React.js, Redux, SASS for the firm's flagship project: a suite of ad-campaign management web applications</li>
+                <li>Collaborated in an agile scrum environment leveraging Git, BitBucket, Jira, and Jenkins for streamlined project management and version control</li>
+                <li>Implemented critical UX features and bug fixes, resulting in significant improvements to clients' user experience</li>
+                <li>Developed a complete overhaul of the main lead generation website (<a href="https://iqm.com/">iqm.com</a>) with Remix.js and Bootstrap</li>
               </ul>
             </Timeline.Left>
             <Timeline.Right timeText="August 2023 - Present">
               <h3 className="h1 mb-4"><span>Computer Science Instructor</span> <span className='accent'>@ <a href="https://icodeschool.com/">iCode Chandler</a></span></h3>
               <ul className="accentList">
-                <li>Teaching children of ages 6-10 introductory robotics engineering concepts, coding fundamentals with Scratch/Vex Go, web development with HTML/CSS/JavaScript, and Data Structures & Algorithms with Python.</li>
+                <li>Teaching children of ages 6-14 introductory robotics engineering concepts, coding fundamentals with Scratch/Vex Go, web development with HTML/CSS/JavaScript, and Data Structures & Algorithms with Python.</li>
               </ul>
             </Timeline.Right>
             <Timeline.Left end={true} timeText="Present">

@@ -36,7 +36,7 @@ export default function Home() {
         <section className={styles.header}>
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
-            <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> </h1>
+            <h1 className={styles.nameTitle}>Likhit <span className="accent">Vyas</span> </h1>
             <p className={styles.nameSubtitle}>CS Student @ ASU <span className="accent">+</span> Software Engineer</p>
           </div>
           <div className={styles.downPointer}>

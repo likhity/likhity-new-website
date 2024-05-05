@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
         </div>
         <p className={styles.copyrightText}>
-          &copy; {new Date().getFullYear()} Likhit Vyas 
+          &copy; {new Date().getFullYear()} Likhit Vyas Yarramsetti
         </p>
       </Container>
     </footer>

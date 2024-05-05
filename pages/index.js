@@ -36,8 +36,8 @@ export default function Home() {
         <section className={styles.header}>
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
-            <h1 className={styles.nameTitle}>Likhit <span className="accent">Vyas</span> </h1>
-            <p className={styles.nameSubtitle}>CS Student @ ASU <span className="accent">+</span> Software Engineer</p>
+            <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> Yarramsetti</h1>
+            <p className={styles.nameSubtitle}>Computer Science <span className='accent'>@</span> ASU <span className="accent">+</span> Intern <span className='accent'>@</span> Edwards Lifesciences</p>
           </div>
           <div className={styles.downPointer}>
             <BsChevronDown />
@@ -64,7 +64,19 @@ export default function Home() {
         <section className={styles.experience}>
           <h2 className={`mb-5 fw-bold ${styles.sentence} text-center`}>Where I've <span className="accent">Worked.</span></h2>
           <Timeline>
-            <Timeline.Left start={true} timeText="May 2022 - August 2022">
+            <Timeline.Left start={true} timeText="May 2024 - Present">
+              <h3 className="h1 mb-4"><span>Software Engineer Intern</span> <span className='accent'>@ <a href="https://www.edwards.com/">Edwards Lifesciences</a></span></h3>
+              <ul className="accentList">
+                <li>Developing GUI for Critical Care Medical Technology with C#</li>
+              </ul>
+            </Timeline.Left>
+            <Timeline.Right timeText="August 2023 - March 2024">
+              <h3 className="h1 mb-4"><span>Computer Science Instructor</span> <span className='accent'>@ <a href="https://icodeschool.com/">iCode Chandler</a></span></h3>
+              <ul className="accentList">
+                <li>Taught children of ages 6-14 introductory robotics engineering concepts, coding fundamentals with Scratch/Vex Go, web development with HTML/CSS/JavaScript, and Data Structures & Algorithms with Python.</li>
+              </ul>
+            </Timeline.Right>
+            <Timeline.Left end={true} timeText="May 2022 - August 2022">
               <h3 className="h1 mb-4"><span>React/TypeScript Intern</span> <span className='accent'>@ <a href="https://iqm.com/">IQM Corporation</a></span></h3>
               <ul className="accentList">
                 <li>Crafted modern, performant, reliable code in TypeScript, React.js, Redux, SASS for the firm's flagship project: a suite of ad-campaign management web applications</li>
@@ -73,37 +85,15 @@ export default function Home() {
                 <li>Developed a complete overhaul of the main lead generation website (<a href="https://iqm.com/">iqm.com</a>) with Remix.js and Bootstrap</li>
               </ul>
             </Timeline.Left>
-            <Timeline.Right timeText="August 2023 - Present">
-              <h3 className="h1 mb-4"><span>Computer Science Instructor</span> <span className='accent'>@ <a href="https://icodeschool.com/">iCode Chandler</a></span></h3>
-              <ul className="accentList">
-                <li>Teaching children of ages 6-14 introductory robotics engineering concepts, coding fundamentals with Scratch/Vex Go, web development with HTML/CSS/JavaScript, and Data Structures & Algorithms with Python.</li>
-              </ul>
-            </Timeline.Right>
-            <Timeline.Left end={true} timeText="Present">
-              <h3 className="h1">Looking for Summer 2024 internship opportunities.</h3>
-              <p>
-                <Link href="/contact" target="_blank">
-                  <a>Get In Touch<HiOutlineExternalLink /></a>
-                </Link>
-              </p>
-            </Timeline.Left>
           </Timeline>
         </section>
         <section className={styles.education}>
           <Container fluid="sm">
             <Row className="align-items-center">
               <Col xs={12} sm={12} md={7}  className="me-0 me-md-5">
-                <h2 className={styles.sentence}>I'm currently a <span className={`accent`}>senior</span> studying <span className={`d-block mt-2 mb-2 code`}>Computer Science</span> at <span className={`fw-bold accent`}>Arizona State University</span>.</h2>
-                <p className='mt-4'>I am also pursuing an M.S. degree in Artificial Intelligence.</p>
+                <h2 className={styles.sentence}>I'm currently a <span className={`accent`}>graduate</span> studying <span className={`d-block mt-2 mb-2 code`}>Artificial Intelligence</span> at <span className={`fw-bold accent`}>Arizona State University</span>.</h2>
+                <p className='mt-4'>Pursuing an M.S. degree.</p>
                 <p>Expecting to complete May 2025.</p>
-                <h4 className="fw-bold mt-5 mb-3">Favorite Courses</h4>
-                <ul>
-                  <li>Data Structures &amp; Algorithms</li>
-                  <li>Theoretical Computer Science</li>
-                  <li>Database Management</li>
-                  <li>Probability &amp; Statistics</li>
-                </ul>
-                <h4 className="fw-bold">Current GPA: <span className={`accent`}>3.83</span></h4>
               </Col>
               <Col>
                 <Image src="/asu.jpg" alt='Vyas walking in ASU campus' width={500} className="img-fluid mt-4 mt-md-0"></Image>
@@ -134,7 +124,7 @@ export default function Home() {
         </section>
         <section className={styles.contact}>
           <h2 className={`${styles.sentence} text-center mb-5`}>Let's <span className="fw-bold accent">Talk.</span></h2>
-          <p className='mt-5'>I am currently looking for Summer 2024 internship opportunities.</p>
+          <p className='mt-5'>I'm currently not looking for work, but I am open to anything.</p>
           <p className="mb-5" >My inbox is always open.</p>
           <Link href="/contact">
             <a className="button mt-5">Contact Me</a>

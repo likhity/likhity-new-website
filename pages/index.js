@@ -124,7 +124,6 @@ export default function Home() {
         </section>
         <section className={styles.contact}>
           <h2 className={`${styles.sentence} text-center mb-5`}>Let's <span className="fw-bold accent">Talk.</span></h2>
-          <p className='mt-5'>I'm currently not looking for work, but I am open to anything.</p>
           <p className="mb-5" >My inbox is always open.</p>
           <Link href="/contact">
             <a className="button mt-5">Contact Me</a>

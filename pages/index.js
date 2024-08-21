@@ -37,7 +37,7 @@ export default function Home() {
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
             <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> Yarramsetti</h1>
-            <p className={styles.nameSubtitle}>Computer Science <span className='accent'>@</span> ASU <span className="accent">+</span> Intern <span className='accent'>@</span> Edwards Lifesciences</p>
+            <p className={styles.nameSubtitle}>Master's in AI <span className='accent'>@</span> ASU <span className="accent">+</span> Prev. SWE Intern <span className='accent'>@</span> Edwards Lifesciences</p>
           </div>
           <div className={styles.downPointer}>
             <BsChevronDown />
@@ -51,12 +51,12 @@ export default function Home() {
               </Col>
               <Col xs={12} sm={12} md={7}  className="">
                 <h2 className={`mb-4 ${styles.sentence}`}>Yeah, I kinda have a long name. You can call me <span className={`fw-bold accent`}>Vyas</span>.</h2>
-                <p>I'm a software engineer.</p>
-                <p>I've been learning about and building software for over 5 years.</p>
-                <p>I first started building 3D games using the Unity game engine in 2016.</p>
-                <p>Today, I mostly develop web applications using technologies like <span className='d-block'>React, Node.js, Flask, PostgreSQL and MongoDB.</span></p>
-                <p>I also <i>really</i> enjoy C++.</p>
-                <p>As a hobby, I learn about film and filmmaking.</p>
+                <p>I'm a software engineering enthusiast.</p>
+                <p>I've been learning about coding and building software for over 5 years.</p>
+                <p>I first started building 3D games using the Unity game engine when I was in 9th grade in 2016.</p>
+                <p>Fast forward to today, and I'm doing stuff all over the place from full-stack web development and learning AI to developing software for medical devices.</p>
+                <p>Today, I'm mainly focused on getting a Master's degree in AI at ASU.</p>
+                <p>As a hobby, I learn about the art of film and filmmaking.</p>
               </Col>
             </Row>
           </Container>
@@ -65,9 +65,12 @@ export default function Home() {
           <h2 className={`mb-5 fw-bold ${styles.sentence} text-center`}>Where I've <span className="accent">Worked.</span></h2>
           <Timeline>
             <Timeline.Left start={true} timeText="May 2024 - Present">
-              <h3 className="h1 mb-4"><span>Software Engineer Intern</span> <span className='accent'>@ <a href="https://www.edwards.com/">Edwards Lifesciences</a></span></h3>
+              <h3 className="h1 mb-4"><span>Software Engineer Intern, R&D</span> <span className='accent'>@ <a href="https://www.edwards.com/">Edwards Lifesciences</a></span></h3>
               <ul className="accentList">
-                <li>Developing GUI for Critical Care Medical Technology with C#</li>
+                <li>Utilized the C# .NET ecosystem and Azure DevOps to develop the software inside HemoSphere: an advanced hemodynamic patient monitoring system used in Critical Care settings in more than 5000 hospitals around the world</li>
+                <li>Employed C#, WPF, and gRPC to implement the GUI and algorithm integration of a new feature: the detection of sAS (Severe Aortic Stenosis) in patients</li>
+                <li>Was the sole developer of MSAS (mock sAS server): a test tool developed with gRPC and Python used by the QA teams for the testing of the Aortic Stenosis Detection feature</li>
+                <li>Crafted a Python script employing natural language processing to programmatically add trace relations for over 5000 SRD, SRS, and SDD documents in PTC Integrity, a software that records system and software requirements ensuring traceability and compliance (used by the FDA to review new releases). This project saved 70+ hours of manual labor.</li>
               </ul>
             </Timeline.Left>
             <Timeline.Right timeText="August 2023 - March 2024">
@@ -104,11 +107,11 @@ export default function Home() {
         <section className={styles.skillsSection}>
           <h2 className={`${styles.sentence} text-center`}>Yeah, I got <span className="fw-bold accent">Skills.</span></h2>
           <ul className={styles.skills}>
-            <li className={`h1 ${styles.skill}`}>JavaScript <p>3 years</p></li>
             <li className={`h1 ${styles.skill}`}>Python <p>3 years</p></li>
+            <li className={`h1 ${styles.skill}`}>JavaScript <p>3 years</p></li>
+            <li className={`h1 ${styles.skill}`}>C# <p>1 year</p></li>
             <li className={`h1 ${styles.skill}`}>C++ <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>Node.js <p>2 years</p></li>
-            <li className={`h1 ${styles.skill}`}>Express.js <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>MongoDB <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>React.js <p>2 years</p></li>
             <li className={`h1 ${styles.skill}`}>TypeScript <p>1 year</p></li>

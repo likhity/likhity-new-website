@@ -64,7 +64,7 @@ export default function Home() {
         <section className={styles.experience}>
           <h2 className={`mb-5 fw-bold ${styles.sentence} text-center`}>Where I've <span className="accent">Worked.</span></h2>
           <Timeline>
-            <Timeline.Left start={true} timeText="May 2024 - Present">
+            <Timeline.Left start={true} timeText="May 2024 - August 2024">
               <h3 className="h1 mb-4"><span>Software Engineer Intern, R&D</span> <span className='accent'>@ <a href="https://www.edwards.com/">Edwards Lifesciences</a></span></h3>
               <ul className="accentList">
                 <li>Utilized the C# .NET ecosystem and Azure DevOps to develop the software inside HemoSphere: an advanced hemodynamic patient monitoring system used in Critical Care settings in more than 5000 hospitals around the world</li>

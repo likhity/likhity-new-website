@@ -12,7 +12,7 @@ export default function Journey() {
         <meta charset="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Hello! My name is Likhit Vyas . I am currently a senior at ASU studying Computer Science and a future full-stack software engineer and filmmaker. Thank you for taking the time to check out my stuff!" />
+        <meta name="description" content="Hello! My name is Likhit Vyas. I am currently a graduate student at ASU studying AI and a future software engineer and filmmaker. Thank you for taking the time to check out my website!" />
         <title>My Journey - Likhit Vyas </title>
         <link rel="shortcut icon" href="/favicon.ico" />
         <style>

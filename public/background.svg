@@ -30,7 +30,7 @@ S 240.04390515685125 1576.7193852012188 240.04390515685125 1554.511082351492
 s 5.433946441954434 -6.378980605772597 11.812927047727031 -6.378980605772597
 S 263.6697592523053 1532.3027795017651 263.6697592523053 1554.511082351492
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#f94679">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-0.8522554514462868s" dur="14.285714285714285s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path2"></mpath>
   </animateMotion>
@@ -40,7 +40,7 @@ S 237.96183784748385 1058.3541789779597 237.96183784748385 998.1665119315182
 s 14.726769596469731 -17.287946917594905 32.01471651406464 -17.287946917594905
 S 301.9912708756131 937.9788448850767 301.9912708756131 998.1665119315182
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-1.4355913500160489s" dur="14.285714285714285s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path3"></mpath>
   </animateMotion>
@@ -50,7 +50,7 @@ S 340.92131808720814 206.33493869884018 340.92131808720814 183.4801693824242
 s 5.592124407208165 -6.564667782374803 12.156792189582967 -6.564667782374803
 S 365.2349024663741 160.62540006600824 365.2349024663741 183.4801693824242
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-9.208999905350906s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path4"></mpath>
   </animateMotion>
@@ -80,7 +80,7 @@ S 561.6047159780569 815.676238454579 561.6047159780569 756.840049567136
 s 14.396088770331799 -16.899756382563417 31.295845152895218 -16.899756382563417
 S 624.1964062838474 698.003860679693 624.1964062838474 756.840049567136
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-7.6373946417296485s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path7"></mpath>
   </animateMotion>
@@ -100,7 +100,7 @@ S 788.0389639204435 155.55316630845385 788.0389639204435 126.21469656132965
 s 7.178561746636776 -8.427007267790998 15.605569014427774 -8.427007267790998
 S 819.2501019492992 96.87622681420544 819.2501019492992 126.21469656132965
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-2.1488907562044104s" dur="14.285714285714285s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path9"></mpath>
   </animateMotion>
@@ -110,7 +110,7 @@ S 800.6724169322788 1017.3691701527811 800.6724169322788 973.890612306817
 s 10.63837053677844 -12.48852193447904 23.12689247125748 -12.48852193447904
 S 846.9262018747938 930.412054460853 846.9262018747938 973.890612306817
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-3" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-3" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-4.324015051090946s" dur="14.285714285714285s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path10"></mpath>
   </animateMotion>
@@ -140,7 +140,7 @@ S 1089.2528495679874 2006.1898238492017 1089.2528495679874 1968.7383668883467
 s 9.16365436276242 -10.757333382373277 19.920987745135697 -10.757333382373277
 S 1129.094825058259 1931.2869099274917 1129.094825058259 1968.7383668883467
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-9.696696310909429s" dur="14.285714285714285s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path13"></mpath>
   </animateMotion>
@@ -150,7 +150,7 @@ S 1178.5059309141018 1496.0791527756774 1178.5059309141018 1442.720939652762
 s 13.055732998160188 -15.32629525870979 28.38202825686998 -15.32629525870979
 S 1235.2699874278417 1389.3627265298464 1235.2699874278417 1442.720939652762
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-2" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-2" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-7.247300338122019s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path14"></mpath>
   </animateMotion>
@@ -170,7 +170,7 @@ S 1341.6573821197208 1862.7281816003401 1341.6573821197208 1806.2516914277335
 s 13.818715680531396 -16.22197058149338 30.040686262024778 -16.22197058149338
 S 1401.7387546437703 1749.7752012551268 1401.7387546437703 1806.2516914277335
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-3" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-3" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-4.503070199268981s" dur="14.285714285714285s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path16"></mpath>
   </animateMotion>
@@ -180,7 +180,7 @@ S 1395.5792968516193 1235.042108189087 1395.5792968516193 1195.1880599711699
 s 9.751522436298854 -11.447439381742136 21.198961818040992 -11.447439381742136
 S 1437.9772204877013 1155.3340117532528 1437.9772204877013 1195.1880599711699
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-10.761731014921034s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path17"></mpath>
   </animateMotion>
@@ -190,7 +190,7 @@ S 1511.776385853486 808.6518222324462 1511.776385853486 774.5370446440741
 s 8.347232814176158 -9.798925477511142 18.1461582916873 -9.798925477511142
 S 1548.0687024368606 740.4222670557019 1548.0687024368606 774.5370446440741
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-11.043878385961616s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path18"></mpath>
   </animateMotion>
@@ -240,7 +240,7 @@ S 1899.2110057179125 177.83603997969118 1899.2110057179125 116.20599949641658
 s 15.079690756545908 -17.70224567072781 32.78193642727372 -17.70224567072781
 S 1964.7748785724598 54.57595901314199 1964.7748785724598 116.20599949641658
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-2" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-2" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-4.9613072442443125s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path23"></mpath>
   </animateMotion>
@@ -250,7 +250,7 @@ S 1978.111946170217 1626.866034294194 1978.111946170217 1570.6973364676278
 s 13.743404787351272 -16.133562141673234 29.876966929024505 -16.133562141673234
 S 2037.865880028266 1514.5286386410617 2037.865880028266 1570.6973364676278
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-2" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-2" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-6.350967356878066s" dur="14.285714285714285s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path24"></mpath>
   </animateMotion>
@@ -290,7 +290,7 @@ S 2296.901002162761 1957.6572263525302 2296.901002162761 1934.8018512394626
 s 5.592272634048422 -6.564841787795975 12.157114421844398 -6.564841787795975
 S 2321.2152310064494 1911.946476126395 2321.2152310064494 1934.8018512394626
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-3" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-3" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-12.056782886720457s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path28"></mpath>
   </animateMotion>
@@ -300,7 +300,7 @@ S 2341.7474636232087 341.35344148844865 2341.7474636232087 308.6795677963876
 s 7.994671222525577 -9.38504882644307 17.379720048968647 -9.38504882644307
 S 2376.5069037211456 276.0056941043265 2376.5069037211456 308.6795677963876
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-10.648518249100142s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path29"></mpath>
   </animateMotion>
@@ -320,7 +320,7 @@ S 2497.049923208553 1155.934884571322 2497.049923208553 1099.3867114544664
 s 13.836255124337018 -16.242560363352155 30.078815487689173 -16.242560363352155
 S 2557.2075541839313 1042.8385383376108 2557.2075541839313 1099.3867114544664
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#ed2c39">
   <animateMotion begin="-5.649469565086385s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path31"></mpath>
   </animateMotion>

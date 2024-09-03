@@ -9,7 +9,6 @@
   align-items: center;
   flex-direction: column;
   background: url('/background.svg');
-  color: lighten($bg-color, 75%);
   h3 {
     font-size: 1.75rem;
   }
@@ -63,9 +62,6 @@
     width: max-content;
     p {
       font-size: 1.2rem;
-    }
-    p, a {
-      color: lighten($bg-color, 50%);
     }
     a {
       font-size: 2.25rem;

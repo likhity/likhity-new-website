@@ -62,7 +62,7 @@ export default function ProjectPage({ project }) {
           <div className={styles.heading}>
             <div className='d-flex align-items-center justify-content-between'>
               <div className={styles.title}>
-                <p><IoIosHammer /> Project</p>
+                <p className={styles.projectSubheading}><IoIosHammer /> Project</p>
                 <h1>{project.title}</h1>
               </div>
               <div className={styles.icons}>

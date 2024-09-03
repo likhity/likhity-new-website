@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition-property: background-color, transform;
+    transition-property: background-color, transform, color;
     transition-duration: 500ms;
     transition-timing-function: ease;
     border-bottom: 5px solid $accent-color;
@@ -41,6 +41,10 @@
       
       .icon {
         margin-left: 1rem;
+
+        &:hover {
+            color: darken($accent-color, 10%);
+        }
       }
     }
     
@@ -64,7 +68,7 @@
           left: 0;
         }
         &:hover {
-          color: white;
+          color: $text-color;
         }
       }
     }
@@ -84,22 +88,22 @@
       
       .tag {
         font-size: 1rem;
-        background-color: transparentize($accent-color, 0.5);
+        background-color: transparentize($accent-color, 0.2);
         padding: 0.25rem 0.75rem;
         border-radius: 12px;
         margin: 0;
         white-space: nowrap;
         text-decoration: none;
         transition: background-color 250ms ease;
+        color: white;
         &:hover {
-          background-color: $accent-color;
+          background-color: darken($accent-color, 10%);
           color: white;
         }
       }
     }
 
     &:hover {
-      color: white;
       background-color: transparentize($accent-color, 0.8);
       transform: translateY(-10px);
     }

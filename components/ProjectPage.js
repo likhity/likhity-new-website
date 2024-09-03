@@ -57,7 +57,7 @@ export default function ProjectPage({ project }) {
       </Head>
 
       <main className="main">
-        <NavBar />
+        <NavBar animation={false} />
         <section className={styles.projectPage}>
           <div className={styles.heading}>
             <div className='d-flex align-items-center justify-content-between'>

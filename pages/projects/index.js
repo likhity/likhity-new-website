@@ -41,7 +41,7 @@ export default function Index() {
 
       <main className="main">
         <section className={styles.projectsSection}>
-          <NavBar />
+          <NavBar animation={false} />
           <h1 className={`text-center`}>All <span className="accent">Projects.</span></h1>
           {tags && 
             <div className={styles.tags}>

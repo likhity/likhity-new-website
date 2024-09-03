@@ -11,12 +11,12 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 import { useState } from "react";
 
-export default function NavBar({ delayedAnimation }) {
+export default function NavBar({ delayedAnimation, animation = true }) {
 
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
-    <nav className={`${styles.navBar} ${delayedAnimation ? styles.delayedAnimation : styles.animation}`}>
+    <nav className={`${styles.navBar} ${animation ? delayedAnimation ? styles.delayedAnimation : styles.animation : ""}`}>
       <Link href="/">
         <a className={styles.homeLink}>vyas<span className="accent">.</span></a>
       </Link>

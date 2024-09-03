@@ -26,7 +26,7 @@ export default function Contact() {
 
       <main className="main">
         <section className={styles.contact}>
-          <NavBar />
+          <NavBar animation={false} />
           <h1 className="text-center">Let's <span className="accent">Talk.</span></h1>
           <div className={styles.formSection}>
             <div className={styles.text}>

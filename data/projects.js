@@ -1,5 +1,13 @@
 export default [
   {
+    title: "Intro to RL",
+    description: "Reinforcement learning is an absolutely fascinating subfield of machine learning. I wanted to write a paper providing a comprehensive introduction of the fundamentals.",
+    download: "/reinforcement_learning.pdf",
+    tags: ["AI/ML", "RL"],
+    link: "/projects/intro-to-rl",
+    pdf: "/reinforcement_learning.pdf",
+  },
+  {
     title: "ASU Course Tracker",
     description: "A way for students to track the number of seats available for any course at ASU.",
     github: "https://github.com/likhity/asu-course-tracker",

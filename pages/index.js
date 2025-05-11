@@ -37,7 +37,7 @@ export default function Home() {
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
             <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> Yarramsetti</h1>
-            <p className={styles.nameSubtitle}>Master of Science, Robotics & <span className='accent'>(AI)</span></p>
+            <p className={styles.nameSubtitle}>Master of Science, Robotics & Autonomous Systems <span className='accent'>(AI)</span></p>
           </div>
           <div className={styles.downPointer}>
             <BsChevronDown />
@@ -55,7 +55,7 @@ export default function Home() {
                 <p>I've been learning about coding and building software for over 5 years.</p>
                 <p>I first started building 3D games using the Unity game engine when I was in 9th grade in 2016.</p>
                 <p>Fast forward to today, and I'm doing stuff all over the place from full-stack web development and learning AI to developing software for medical devices.</p>
-                <p>Today, I'm mainly focused on getting a Master's degree in AI at ASU.</p>
+                <p>I'm also a Master of Science in Robotics & AI from ASU.</p>
                 <p>As a hobby, I learn about the art of film and filmmaking.</p>
               </Col>
             </Row>

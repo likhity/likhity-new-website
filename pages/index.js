@@ -37,7 +37,7 @@ export default function Home() {
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
             <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> Yarramsetti</h1>
-            <p className={styles.nameSubtitle}>AI Student <span className='accent'>@</span> ASU</p>
+            <p className={styles.nameSubtitle}>Master of Science, Robotics & <span className='accent'>(AI)</span></p>
           </div>
           <div className={styles.downPointer}>
             <BsChevronDown />
@@ -94,9 +94,8 @@ export default function Home() {
           <Container fluid="sm">
             <Row className="align-items-center">
               <Col xs={12} sm={12} md={7}  className="me-0 me-md-5">
-                <h2 className={styles.sentence}>I'm currently a <span className={`accent`}>graduate</span> studying <span className={`d-block mt-2 mb-2 code`}>Artificial Intelligence</span> at <span className={`fw-bold accent`}>Arizona State University</span>.</h2>
-                <p className='mt-4'>Pursuing an M.S. degree.</p>
-                <p>Expecting to complete May 2025.</p>
+                <h2 className={styles.sentence}>I'm a Master of Science in <span className={`d-block mt-2 mb-2 code`}>Artificial Intelligence</span> from <span className={`fw-bold accent`}>Arizona State University</span>.</h2>
+                <p>Completed May 2025.</p>
               </Col>
               <Col>
                 <Image src="/asu.jpg" alt='Vyas walking in ASU campus' width={500} className="img-fluid mt-4 mt-md-0"></Image>

@@ -2,7 +2,7 @@ export default [
   {
     title: "Using RL to Play Bowling",
     description: "Trained a robot using Proximal Policy Optimization (PPO) to play bowling in Mujoco",
-    tags: ["AI/ML", "RL", "Robotics"],
+    tags: ["AI/ML", "RL", "Mujoco", "Robotics"],
     link: "/projects/using-rl-to-play-bowling",
     github: "https://github.com/likhity/mujoco-rl",
     markdown: "https://raw.githubusercontent.com/likhity/mujoco-rl/refs/heads/master/README.md",

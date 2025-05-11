@@ -37,7 +37,7 @@ export default function Home() {
           <div className={styles.title}>
             <p className={styles.typing}>Hello, my name is</p>
             <h1 className={styles.nameTitle}><span className="accent">Likhit Vyas</span> Yarramsetti</h1>
-            <p className={styles.nameSubtitle}>Master of Science, Robotics & Autonomous Systems <span className='accent'>(AI)</span></p>
+            <p className={styles.nameSubtitle}>Master of Science, <span className='accent'>Robotics & Autonomous Systems (AI)</span></p>
           </div>
           <div className={styles.downPointer}>
             <BsChevronDown />

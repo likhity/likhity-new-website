@@ -41,7 +41,7 @@
         }
 
         h3 span:not(.accent) {
-            white-space: nowrap;
+          white-space: nowrap;
         }
 
         .startTimeline {
@@ -53,6 +53,7 @@
           top: -1px;
           z-index: 1;
         }
+
         .endTimeline {
           position: absolute;
           height: 51%;
@@ -127,6 +128,16 @@
           background-color: $accent-color;
           box-shadow: 0 0 20px 5px transparentize($accent-color, 0.7);
         }
+      }
+
+      .startTimeline {
+        position: absolute;
+        height: 51%;
+        width: 10px;
+        background-color: $bg-color;
+        left: -7px;
+        top: -1px;
+        z-index: 1;
       }
 
       .endTimeline {

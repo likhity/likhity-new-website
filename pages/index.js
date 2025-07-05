@@ -71,7 +71,7 @@ export default function Home() {
               </ul>
             </Timeline.Right>
             <Timeline.Left timeText="May 2024 - August 2024">
-              <h3 className="h1 mb-4"><span>Software Engineer Intern, R&D</span> <span className='accent'>@ <a href="https://www.edwards.com/">Edwards Lifesciences</a></span></h3>
+              <h3 className="h1 mb-4"><span>Software Engineer Intern</span> <span className='accent'>@ <a href="https://www.edwards.com/">Edwards Lifesciences</a></span></h3>
               <ul className="accentList">
                 <li>Utilized the C# .NET ecosystem and Azure DevOps to develop the software inside HemoSphere: an advanced hemodynamic patient monitoring system used in Critical Care settings in more than 5000 hospitals around the world</li>
                 <li>Employed C#, WPF, and gRPC to implement the GUI and algorithm integration of a new feature: the detection of sAS (Severe Aortic Stenosis) in patients</li>

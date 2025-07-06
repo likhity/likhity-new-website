@@ -3,7 +3,6 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.scss'
 
 import { Image, Row, Col, Container } from "react-bootstrap";
-import { HiOutlineExternalLink } from "react-icons/hi";
 import { BsChevronDown } from "react-icons/bs";
 
 import NavBar from '../components/NavBar';

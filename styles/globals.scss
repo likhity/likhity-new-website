@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: $inter-font;
   overflow-x: hidden;
+  zoom: 0.9;
 }
 
 a {
@@ -134,6 +135,9 @@ code {
 }
 
 @media (max-width: 700px) {
+  html, body {
+    zoom: normal;
+  }
   .main {
     section {
       padding: 5rem 2rem;

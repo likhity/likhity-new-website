@@ -20,7 +20,7 @@ S 118.56732524804792 113.96029486262555 118.56732524804792 81.4327322279216
 s 7.958871708491386 -9.343023309968151 17.301895018459536 -9.343023309968151
 S 153.171115284967 48.90516959321767 153.171115284967 81.4327322279216
 z" fill="none" stroke="none"></path>
-<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#601429">
+<use xlink:href="#path-5eeu484j7jl-1" x="0" y="0" stroke="#438253ff">
   <animateMotion begin="-10.862568922626057s" dur="14.285714285714285s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite" calcMode="linear">
     <mpath xlink:href="#path1"></mpath>
   </animateMotion>

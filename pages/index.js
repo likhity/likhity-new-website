@@ -63,10 +63,13 @@ export default function Home() {
           <h2 className={`mb-5 fw-bold ${styles.sentence} text-center`}>Where I've <span className="accent">Worked.</span></h2>
           <Timeline>
             <Timeline.Right start={true} timeText="June 2025 - Present">
-              <h3 className="h1 mb-4"><span>Software Engineer Intern</span> <span className='accent'>@ <a href="https://quantiperm.com/">Quantiperm</a></span></h3>
+              <h3 className="h1 mb-4"><span>Software Engineer</span> <span className='accent'>@ <a href="https://quantiperm.com/">Quantiperm</a></span></h3>
               <ul className="accentList">
-                <li>Developing C++ embedded systems software for real-time metabolic monitoring systems, using React.js for the GUI and web-based interface</li>
-                <li>Interfacing with sensors using the I2C protocol, developing a Modbus interface for the systems over TCP</li>
+                <li>Designed and implemented C++ embedded software and RESTful APIs on Raspberry Pis for real-time metabolic monitoring and inline carbonation systems, all in Linux-based environments for development and deployment</li>
+                <li>Engineered system communication layers using GPIO, PWM, I2C, and implemented Modbus interfaces over TCP</li>
+                <li>Developed touchscreen and web UIs with React.js and mobile apps in React Native to monitor these systems, enabling real-time sensor data visualization</li>
+                <li>Optimized React UIs using tools like react-scan, re-engineering state management and eliminating unnecessary re-renders, achieving near-instant input responsiveness and significantly improving GUI performance</li>
+                <li>Leveraged AI-assisted IDE tools like Cursor and Copilot to speed development, without compromising code quality</li>
               </ul>
             </Timeline.Right>
             <Timeline.Left timeText="May 2024 - August 2024">

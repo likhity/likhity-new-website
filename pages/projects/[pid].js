@@ -1,6 +1,6 @@
 import ProjectPage from "../../components/ProjectPage";
 
-import projects from "../../data/projects";
+import projects from "../../data/projects.json";
 
 import { useRouter } from "next/router";
 

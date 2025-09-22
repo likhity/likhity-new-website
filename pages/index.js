@@ -10,7 +10,7 @@ import Timeline from '../components/Timeline';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
-import projects from "../data/projects";
+import projects from "../data/projects.json";
 
 export default function Home() {
 

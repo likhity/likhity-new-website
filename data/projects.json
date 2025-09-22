@@ -1,0 +1,169 @@
+[
+  {
+    "title": "PhotoHunter",
+    "description": "A React Native scavenger hunt app similar to Geocaching where users take photos of specific locations and objects, validated using multi-modal LLMs.",
+    "tags": ["React Native", "LLMs", "Django", "PostgreSQL", "Langchain", "OpenAI", "Mapbox"],
+    "link": "/projects/photohunter",
+    "github": "https://github.com/likhity/photo-hunter-app",
+    "markdown": "https://raw.githubusercontent.com/likhity/photo-hunter-app/main/README.md",
+    "imageBaseUri": "https://raw.githubusercontent.com/likhity/photo-hunter-app/main"
+  },
+  {
+    "title": "Bowling with RL",
+    "description": "Trained a robot using Proximal Policy Optimization (PPO) to play bowling in Mujoco",
+    "tags": ["AI/ML", "RL", "Mujoco", "Robotics"],
+    "link": "/projects/bowling-with-rl",
+    "github": "https://github.com/likhity/mujoco-rl",
+    "markdown": "https://raw.githubusercontent.com/likhity/mujoco-rl/refs/heads/master/README.md",
+    "imageBaseUri": "https://raw.githubusercontent.com/likhity/mujoco-rl/master"
+  },
+  {
+    "title": "Intro to RL",
+    "description": "Reinforcement learning is an absolutely fascinating subfield of machine learning. I wanted to write a paper providing a comprehensive introduction of the fundamentals.",
+    "download": "/reinforcement_learning.pdf",
+    "tags": ["AI/ML", "RL"],
+    "link": "/projects/intro-to-rl",
+    "pdf": "/reinforcement_learning.pdf"
+  },
+  {
+    "title": "ASU Course Tracker",
+    "description": "A way for students to track the number of seats available for any course at ASU.",
+    "github": "https://github.com/likhity/asu-course-tracker",
+    "tags": ["Node.js", "Express", "MongoDB", "JWT", "CSS", "Twilio"],
+    "link": "/projects/asu-course-tracker",
+    "markdown": "https://raw.githubusercontent.com/likhity/asu-course-tracker/main/README.md",
+    "imageBaseUri": "https://raw.githubusercontent.com/likhity/asu-course-tracker/main"
+  },
+  {
+    "title": "PhotoShare",
+    "description": "A photo-sharing application where users can create albums, post photos, tag their photos, view others' photos, like, comment, etc.",
+    "github": "https://github.com/likhity/photoshare-backend",
+    "tags": ["React", "React Router", "Python", "Flask", "PostgreSQL", "JWT", "AWS S3", "CSS"],
+    "link": "/projects/photoshare",
+    "markdown": "https://raw.githubusercontent.com/likhity/photoshare-backend/master/README.md",
+    "imageBaseUri": "https://raw.githubusercontent.com/likhity/photoshare-backend/master",
+    "contributors": "https://api.github.com/repos/likhity/photoshare-backend/contributors"
+  },
+  {
+    "title": "Twitch Chat Analyzer",
+    "description": "Chrome extension that analyzes a twitch stream and reports a percentage positivity of the chat.",
+    "github": "https://github.com/likhity/twitch-stream-chat-analyzer",
+    "tags": ["Python", "Socket.io", "Flask", "NLTK", "Numpy"],
+    "link": "/projects/twitch-chat-analyzer",
+    "markdown": "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main/README.md",
+    "imageBaseUri": "https://raw.githubusercontent.com/likhity/twitch-stream-chat-analyzer/main",
+    "contributors": "https://api.github.com/repos/likhity/twitch-stream-chat-analyzer/contributors"
+  },
+  {
+    "title": "Pizza Shop",
+    "description": "A pizza ordering system built for a fake pizza restaurant named \"SunDevil Pizza\".",
+    "github": "https://github.com/likhity/pizza-shop",
+    "deployment": "https://pizza-shop-team19.herokuapp.com/",
+    "tags": ["Node.js", "Express", "MongoDB", "JWT", "CSS", "Cypress"],
+    "link": "/projects/pizza-shop",
+    "markdown": "https://raw.githubusercontent.com/likhity/pizza-shop/main/README.md",
+    "contributors": "https://api.github.com/repos/likhity/pizza-shop/contributors"
+  },
+  {
+    "title": "CFG Parser",
+    "description": "C++ program that reads and parses a context-free grammar. Outputs requested information about the grammar.",
+    "github": "https://github.com/likhity/cfg-parser",
+    "tags": ["C++"],
+    "link": "/projects/cfg-parser",
+    "markdown": "https://raw.githubusercontent.com/likhity/cfg-parser/master/README.md"
+  },
+  {
+    "title": "Simple Interpreter",
+    "description": "A C++ program that interprets a simple language and executes the instructions specified by that program.",
+    "github": "ask me",
+    "tags": ["C++"],
+    "link": "/projects/simple-interpreter",
+    "markdown": "https://raw.githubusercontent.com/likhity/simple-interpreter/main/README.md"
+  },
+  {
+    "title": "Shoot 'Em Up",
+    "description": "Basic FPS game built with Unity. I initially planned on fully fleshing this game out and releasing on Steam, but I later became more interested in web dev.",
+    "download": "https://likhity.github.io/webdev/Infiltrate.zip",
+    "tags": ["Unity", "C#"],
+    "link": "/projects/shoot-'em-up"
+  },
+  {
+    "title": "The Burger Center",
+    "description": "A landing page for a fake restaurant named \"The Burger Center\". Just wanted to practice my CSS and React skills.",
+    "github": "https://github.com/likhity/the-burger-center",
+    "deployment": "https://likhity.github.io/webdev/the-burger-center",
+    "tags": ["React", "CSS"],
+    "link": "/projects/the-burger-center",
+    "markdown": "https://raw.githubusercontent.com/likhity/the-burger-center/main/README.md"
+  },
+  {
+    "title": "Postman Clone",
+    "description": "A very simple clone of postman that uses Axios to make requests.",
+    "github": "https://github.com/likhity/postman-clone",
+    "deployment": "https://likhity.github.io/webdev/postman-clone/index.html",
+    "tags": ["CSS", "JS", "Axios", "Parcel"],
+    "link": "/projects/postman-clone",
+    "markdown": "https://raw.githubusercontent.com/likhity/postman-clone/main/README.md"
+  },
+  {
+    "title": "Old Project Portfolio",
+    "description": "The old version of my personal website.\nHideous, I know.",
+    "github": "https://github.com/likhity/likhity.github.io",
+    "deployment": "https://likhity.github.io/webdev/",
+    "tags": ["HTML", "CSS", "JS"],
+    "link": "/projects/old-project-portfolio"
+  },
+  {
+    "title": "Motor Skillz",
+    "description": "A simple game for toddlers.",
+    "github": "https://github.com/likhity/likhity.github.io/tree/master/webdev/Motor%20Skillz%20App",
+    "deployment": "https://likhity.github.io/webdev/Motor%20Skillz%20App/",
+    "tags": ["HTML", "CSS", "JS", "p5.js"],
+    "link": "/projects/motor-skillz"
+  },
+  {
+    "title": "Color Tools",
+    "description": "Simple tools for generating random colors or converting colors from RGB to HEX and vice versa.",
+    "github": "https://github.com/likhity/likhity.github.io/tree/master/Color%20Tools",
+    "deployment": "https://likhity.github.io/Color%20Tools/",
+    "tags": ["HTML", "CSS", "JS"],
+    "link": "/projects/color-tools"
+  },
+  {
+    "title": "Huffman Coding",
+    "description": "CLI programs that encode/decode text files using Huffman coding.",
+    "github": "ask me",
+    "tags": ["C++"],
+    "link": "/projects/huffman-coding"
+  },
+  {
+    "title": "Data Structures",
+    "description": "An implementation of hash tables, heaps, and binary search trees in C++.",
+    "github": "ask me",
+    "tags": ["C++"],
+    "link": "/projects/data-structures"
+  },
+  {
+    "title": "Graph Algorithms",
+    "description": "An exercise of the DFS, Floyd-Warshall, SCCs algorithms.",
+    "github": "ask me",
+    "tags": ["C++"],
+    "link": "/projects/graph-algorithms"
+  },
+  {
+    "title": "Snake",
+    "description": "Simple snake game.",
+    "deployment": "https://likhity.github.io/webdev/Snake/index.html",
+    "github": "https://github.com/likhity/likhity.github.io/tree/master/webdev/Snake",
+    "tags": ["JS", "CSS"],
+    "link": "/projects/snake"
+  },
+  {
+    "title": "Tic Tac Toe",
+    "description": "Simple Tic Tac Toe game.",
+    "deployment": "https://likhity.github.io/webdev/Tic%20Tac%20Toe/index.html",
+    "github": "https://github.com/likhity/likhity.github.io/tree/master/webdev/Tic%20Tac%20Toe",
+    "tags": ["JS", "CSS"],
+    "link": "/projects/tic-tac-toe"
+  }
+]

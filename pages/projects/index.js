@@ -8,7 +8,7 @@ import NavBar from "../../components/NavBar";
 import Footer from '../../components/Footer';
 import { MdClose } from "react-icons/md";
 
-import projectData from "../../data/projects";
+import projectData from "../../data/projects.json";
 import Alerts from '../../components/Alerts';
 
 export default function Index() {

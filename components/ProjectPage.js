@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import { FiExternalLink, FiDownload } from "react-icons/fi";
 import { VscGithubAlt } from "react-icons/vsc";
 import { IoIosHammer } from "react-icons/io";
@@ -120,9 +121,10 @@ export default function ProjectPage({ project }) {
                     <p className={styles.readMeTitle}>README.md</p>
                     <ReactMarkdown 
                       transformImageUri={uri => 
-                        uri.startsWith("http") ? uri : `${project.imageBaseUri}${uri}`
+                        uri.startsWith("http") ? uri : `${project.imageBaseUri}/${uri}`
                       }
-                      remarkPlugins={[remarkGfm]}>
+                      remarkPlugins={[remarkGfm]}
+                      rehypePlugins={[rehypeRaw]}>
                       {markdown}
                     </ReactMarkdown>
                   </>

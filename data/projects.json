@@ -1,7 +1,7 @@
 [
   {
     "title": "PhotoHunter",
-    "description": "A scavenger hunt app similar to Geocaching where users take photos of specific locations and objects, validated using multi-modal LLMs.",
+    "description": "A scavenger hunt app where users take photos of specific locations and objects, validated using multi-modal LLMs.",
     "tags": ["React Native", "LLMs", "Django", "PostgreSQL", "Langchain", "Mapbox"],
     "link": "/projects/photohunter",
     "github": "https://github.com/likhity/photo-hunter-app",

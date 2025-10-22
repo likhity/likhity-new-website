@@ -69,7 +69,7 @@ export default function Home() {
                 <li>C#, SQL Server</li>
               </ul>
             </Timeline.Left>
-            <Timeline.Right start={true} timeText="June 2025 - November 2025">
+            <Timeline.Right timeText="June 2025 - November 2025">
               <h3 className="h1 mb-4"><span>Software Engineer</span> <span className='accent'>@ <a href="https://quantiperm.com/">Quantiperm</a></span></h3>
               <ul className="accentList">
                 <li>Designed and implemented C++ embedded software and RESTful APIs on Raspberry Pis for real-time metabolic monitoring and inline carbonation systems, all in Linux-based environments for development and deployment</li>

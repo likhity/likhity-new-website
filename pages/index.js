@@ -65,8 +65,8 @@ export default function Home() {
             <Timeline.Left start={true} timeText="November 2025 - Present">
               <h3 className="h1 mb-4"><span>Software Engineer</span> <span className='accent'>@ <a href="https://visa.com/">Visa</a></span></h3>
               <ul className="accentList">
-                <li>Visa Admin Services platform</li>
-                <li>C#, SQL Server</li>
+                <li>Took ownership of a major modernization effort of backend services for Card & Account Maintenance tools; migrating legacy SOAP APIs to RESTful APIs using C#, ASP.NET Core Web API, and SQL Server</li>
+                <li>Operated distributed OLTP databases in SQL Server, supporting high volume transaction systems (16 million+ queries per day)</li>
               </ul>
             </Timeline.Left>
             <Timeline.Right timeText="June 2025 - November 2025">

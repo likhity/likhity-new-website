@@ -25,24 +25,26 @@ export default function BlogIndex({ posts }) {
         <section className={styles.blogSection}>
           <NavBar animation={false} />
           <h1 className="text-center">Blog<span className="accent">.</span></h1>
-          <div className={styles.postList}>
+          <ul className={styles.posts}>
             {posts.map(post => (
-              <Link href={`/blog/${post.slug}`} key={post.slug}>
-                <a className={styles.postCard}>
-                  <p className={styles.date}>
-                    {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                  </p>
-                  <h2>{post.title}</h2>
-                  {post.description && <p className={styles.description}>{post.description}</p>}
-                  {post.tags && (
-                    <div className={styles.tags}>
-                      {post.tags.map(tag => <span key={tag} className={styles.tag}>{tag}</span>)}
-                    </div>
-                  )}
-                </a>
-              </Link>
+              <li key={post.slug} className={styles.post}>
+                <p className={styles.date}>
+                  {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                </p>
+                <h3>
+                  <Link href={`/blog/${post.slug}`}>
+                    <a>{post.title}</a>
+                  </Link>
+                </h3>
+                {post.description && <p className={styles.postDescription}>{post.description}</p>}
+                {post.tags && (
+                  <div className={styles.tags}>
+                    {post.tags.map(tag => <span key={tag} className={styles.tag}>{tag}</span>)}
+                  </div>
+                )}
+              </li>
             ))}
-          </div>
+          </ul>
           <Alerts />
         </section>
         <Footer />

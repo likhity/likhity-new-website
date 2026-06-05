@@ -27,6 +27,11 @@ export default function NavBar({ delayedAnimation, animation = true }) {
           </Link>
         </li>
         <li>
+          <Link href="/blog">
+            <a>Blog</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/contact">
             <a>Contact</a>
           </Link>
@@ -45,6 +50,11 @@ export default function NavBar({ delayedAnimation, animation = true }) {
           <li>
             <Link href="/projects">
               <a>Projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog">
+              <a>Blog</a>
             </Link>
           </li>
           <li>

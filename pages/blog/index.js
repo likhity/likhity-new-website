@@ -24,7 +24,7 @@ export default function BlogIndex({ posts }) {
       <main className="main">
         <section className={styles.blogSection}>
           <NavBar animation={false} />
-          <h1 className="text-center">Blog<span className="accent">.</span></h1>
+          <h1 className="text-center">My <span className="accent">Musings.</span></h1>
           <ul className={styles.posts}>
             {posts.map(post => (
               <li key={post.slug} className={styles.post}>

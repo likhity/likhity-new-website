@@ -1,26 +1,32 @@
 import Head from 'next/head'
-import Link from "next/link";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 import styles from '../../styles/ProjectsPage.module.scss'
 
-import Projects from '../../components/Projects';
-import NavBar from "../../components/NavBar";
-import Footer from '../../components/Footer';
-import { MdClose } from "react-icons/md";
+import Projects from '../../components/Projects'
+import NavBar from '../../components/NavBar'
+import Footer from '../../components/Footer'
+import SearchBar from '../../components/SearchBar'
+import Alerts from '../../components/Alerts'
 
-import projectData from "../../data/projects.json";
-import Alerts from '../../components/Alerts';
+import projectData from '../../data/projects.json'
+
+const allTags = [...new Set(projectData.flatMap(p => p.tags || []))].sort()
 
 export default function Index() {
+  const router = useRouter()
+  const { q, tags } = router.query
 
-  let projects = projectData;
+  const activeTags = tags ? tags.split(',') : []
 
-  const router = useRouter();
-  const { tags } = router.query;
-  
-  if (tags) {
-    const allTags = tags.split(',');
-    projects = projects.filter(project => allTags.some(tag => project.tags.includes(tag)))
+  let projects = projectData
+  if (activeTags.length) {
+    projects = projects.filter(project => activeTags.some(tag => project.tags.includes(tag)))
+  }
+  if (q) {
+    projects = projects.filter(project =>
+      project.title.toLowerCase().includes(q.toLowerCase()) ||
+      project.description?.toLowerCase().includes(q.toLowerCase())
+    )
   }
 
   return (
@@ -42,22 +48,8 @@ export default function Index() {
       <main className="main">
         <section className={styles.projectsSection}>
           <NavBar animation={false} />
-          <h1 className={`text-center`}>All <span className="accent">Projects.</span></h1>
-          {tags && 
-            <div className={styles.tags}>
-              Tags:
-              {
-                tags.split(',').map((tag => (
-                  <p key={tag} className={styles.tag}>
-                    {tag}
-                    <Link href={`/projects?tags=${tags.split(',').filter(t => t != tag).join(',')}`}>
-                      <a><MdClose /></a>
-                    </Link>
-                  </p>
-                )))
-              }
-            </div>
-          }
+          <h1 className="text-center">All <span className="accent">Projects.</span></h1>
+          <SearchBar allTags={allTags} />
           <Projects projects={projects} />
           <Alerts />
         </section>

@@ -4,19 +4,26 @@ import { useRouter } from 'next/router'
 import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 import Alerts from '../../components/Alerts'
+import SearchBar from '../../components/SearchBar'
 import styles from '../../styles/Blog.module.scss'
 import { getAllPosts } from '../../lib/posts'
 import { BsPinAngleFill } from 'react-icons/bs'
-import { MdClose } from 'react-icons/md'
 
 export default function BlogIndex({ posts }) {
   const router = useRouter()
-  const { tags } = router.query
+  const { q, tags } = router.query
 
   const activeTags = tags ? tags.split(',') : []
-  const visiblePosts = activeTags.length
-    ? posts.filter(p => activeTags.some(tag => p.tags?.includes(tag)))
-    : posts
+  const allTags = [...new Set(posts.flatMap(p => p.tags || []))].sort()
+
+  const visiblePosts = posts.filter(post => {
+    const matchesSearch = !q ||
+      post.title?.toLowerCase().includes(q.toLowerCase()) ||
+      post.description?.toLowerCase().includes(q.toLowerCase())
+    const matchesTags = activeTags.length === 0 ||
+      activeTags.some(tag => post.tags?.includes(tag))
+    return matchesSearch && matchesTags
+  })
 
   return (
     <div className={styles.container}>
@@ -36,19 +43,7 @@ export default function BlogIndex({ posts }) {
         <section className={styles.blogSection}>
           <NavBar animation={false} />
           <h1 className="text-center">My <span className="accent">Musings.</span></h1>
-          {tags && (
-            <div className={styles.filterTags}>
-              Tags:
-              {activeTags.map(tag => (
-                <p key={tag} className={styles.filterTag}>
-                  {tag}
-                  <Link href={`/blog?tags=${activeTags.filter(t => t !== tag).join(',')}`}>
-                    <a><MdClose /></a>
-                  </Link>
-                </p>
-              ))}
-            </div>
-          )}
+          <SearchBar allTags={allTags} />
           <ul className={styles.posts}>
             {visiblePosts.map(post => (
               <li key={post.slug} className={`${styles.post}${post.pinned ? ` ${styles.pinned}` : ''}`}>

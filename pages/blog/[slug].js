@@ -54,7 +54,9 @@ export default function BlogPost({ frontmatter, mdxSource }) {
             {frontmatter.tags && (
               <div className={styles.tags}>
                 {frontmatter.tags.map(tag => (
-                  <span key={tag} className={styles.tag}>{tag}</span>
+                  <Link href={`/blog?tags=${encodeURIComponent(tag)}`} key={tag}>
+                    <a className={styles.tag}>{tag}</a>
+                  </Link>
                 ))}
               </div>
             )}

@@ -16,6 +16,36 @@
     margin-top: 1.5rem;
   }
 
+  .filterTags {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .filterTag {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background-color: transparentize($accent-color, 0.2);
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      margin: 0;
+      white-space: nowrap;
+      color: white;
+
+      a {
+        font-size: 1.25rem;
+        margin-right: -4px;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
   .posts {
     display: grid;
     width: 100%;
@@ -105,7 +135,14 @@
           border-radius: 12px;
           margin: 0;
           white-space: nowrap;
+          text-decoration: none;
+          transition: background-color 250ms ease;
           color: white;
+
+          &:hover {
+            background-color: darken($accent-color, 10%);
+            color: white;
+          }
         }
       }
 

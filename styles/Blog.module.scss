@@ -44,6 +44,15 @@
       position: relative;
       overflow: hidden;
 
+      .pinIcon {
+        position: absolute;
+        top: $padding;
+        left: $padding;
+        font-size: 1.4rem;
+        color: $accent-color;
+        z-index: 2;
+      }
+
       .date {
         position: absolute;
         top: $padding;

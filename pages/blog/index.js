@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import Alerts from '../../components/Alerts'
 import styles from '../../styles/Blog.module.scss'
 import { getAllPosts } from '../../lib/posts'
+import { BsPinAngleFill } from 'react-icons/bs'
 
 export default function BlogIndex({ posts }) {
   return (
@@ -27,7 +28,8 @@ export default function BlogIndex({ posts }) {
           <h1 className="text-center">My <span className="accent">Musings.</span></h1>
           <ul className={styles.posts}>
             {posts.map(post => (
-              <li key={post.slug} className={styles.post}>
+              <li key={post.slug} className={`${styles.post}${post.pinned ? ` ${styles.pinned}` : ''}`}>
+                {post.pinned && <BsPinAngleFill className={styles.pinIcon} />}
                 <p className={styles.date}>
                   {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
                 </p>

@@ -60,47 +60,49 @@ export default function SearchBar({ allTags }) {
 
   return (
     <div className={styles.searchBar} ref={containerRef}>
-      <div className={styles.inputRow}>
-        <div className={styles.searchInput}>
-          <input
-            type="text"
-            placeholder="Search..."
-            value={inputValue}
-            onChange={e => setInputValue(e.target.value)}
-          />
-          {inputValue && (
-            <button className={styles.clearBtn} onClick={() => setInputValue('')} aria-label="Clear search">
-              <MdClose />
-            </button>
-          )}
-        </div>
-
-        <button
-          className={`${styles.tagsBtn}${activeTags.length ? ` ${styles.tagsBtnActive}` : ''}`}
-          onClick={() => setPanelOpen(o => !o)}
-        >
-          Tags{activeTags.length > 0 ? ` (${activeTags.length})` : ''}
-          {panelOpen ? <MdExpandLess /> : <MdExpandMore />}
-        </button>
-      </div>
-
-      {panelOpen && (
-        <div className={styles.tagsPanel}>
-          {allTags.map(tag => {
-            const isActive = activeTags.includes(tag)
-            return (
-              <button
-                key={tag}
-                className={`${styles.tagOption}${isActive ? ` ${styles.tagOptionActive}` : ''}`}
-                onClick={() => toggleTag(tag)}
-              >
-                {tag}
-                {isActive && <MdClose className={styles.tagX} />}
+      <div className={styles.inputWrapper}>
+        <div className={styles.inputRow}>
+          <div className={styles.searchInput}>
+            <input
+              type="text"
+              placeholder="Search..."
+              value={inputValue}
+              onChange={e => setInputValue(e.target.value)}
+            />
+            {inputValue && (
+              <button className={styles.clearBtn} onClick={() => setInputValue('')} aria-label="Clear search">
+                <MdClose />
               </button>
-            )
-          })}
+            )}
+          </div>
+
+          <button
+            className={`${styles.tagsBtn}${activeTags.length ? ` ${styles.tagsBtnActive}` : ''}`}
+            onClick={() => setPanelOpen(o => !o)}
+          >
+            Tags{activeTags.length > 0 ? ` (${activeTags.length})` : ''}
+            {panelOpen ? <MdExpandLess /> : <MdExpandMore />}
+          </button>
         </div>
-      )}
+
+        {panelOpen && (
+          <div className={styles.tagsPanel}>
+            {allTags.map(tag => {
+              const isActive = activeTags.includes(tag)
+              return (
+                <button
+                  key={tag}
+                  className={`${styles.tagOption}${isActive ? ` ${styles.tagOptionActive}` : ''}`}
+                  onClick={() => toggleTag(tag)}
+                >
+                  {tag}
+                  {isActive && <MdClose className={styles.tagX} />}
+                </button>
+              )
+            })}
+          </div>
+        )}
+      </div>
 
       {activeTags.length > 0 && (
         <div className={styles.activeTags}>

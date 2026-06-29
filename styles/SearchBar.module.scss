@@ -4,7 +4,10 @@
   width: 100%;
   max-width: 540px;
   margin: 0 auto 1.5rem;
-  position: relative;
+
+  .inputWrapper {
+    position: relative;
+  }
 
   .inputRow {
     display: flex;

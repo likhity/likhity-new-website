@@ -1,0 +1,25 @@
+---
+title: Book Review - OSTEP.
+date: 2026-07-12
+description: This book is really fun to read, and clearly explains important OS concepts for all SWEs.
+tags: [books, ostep, operating systems]
+authors: [likhity]
+---
+
+# Book review - Operating Systems: Three Easy Pieces.
+
+When I did my CS degree at ASU, I didn't try too hard with my Operating Systems class, thinking that my career would mostly be in high-level application development. I thought the OS was just a collection of abstractions that allowed apps to run, never realizing just how vital it is to understand it deeper, because it allows you to make better decisions when trying to write reliable, efficient, and secure code especially in languages like C++.
+
+To refresh my knowledge and fill in the gaps, I recently went through the widely recommended first two sections (Virtualization & Concurrency) of the book Operating Systems: Three Easy Pieces. 
+
+It dives deep into the internals of how modern OSes manage memory for processes, schedule threads, and how they provide applications the ability to do things concurrently as well as how they implement the primitives for writing concurrent programs that don't break (locks, condition variables, semaphores, etc).
+
+One of the biggest lessons for me was virtualization of memory. The way the OS creates the illusion that each process has its own memory and CPU (even though these resources are actually being shared by multiple processes) is really fascinating. Basically, each process has its own virtual address space that is organized a certain way: Code, Data, Stack & Heap. In this virtual space, they appear to be neatly organized in this order. However, on the physical RAM itself, they may actually be scattered all over the place. Whenever a program references something that is part of its address space (be it a variable, data, something on the heap, stack, etc), the memory management unit of the computer actually translates that virtual address to a physical address on the RAM using the paging information provided by the OS. There is a lot of machinery involved in these translations, including TLBs, page tables, page replacement policies, and swapping. Learning these things exposed to me how software performance can vary dramatically under different workloads, and how writing efficient software sometimes involves decisions that require more than just writing correct code. For instance, many databases use something call huge pages in their address space. This allows faster virtual to physical address translations because there will be fewer TLB misses because a lot of the data structures that DBs use (such as indexes) are frequently very large and randomly-accessed.
+
+Beyond the technical content, it's also just incredibly fun to read which is not something you would expect of a book on OS. The author explains everything very clearly, and also litters the content with jokes and pop-culture references here and there to make the experience more enjoyable.
+
+![Jokes in OSTEP](/IMG_0457-EDIT.jpg)
+
+All in all, this book is an incredibly worthwhile read for all SWEs, even ones that mostly worked in high level abstractions like me.
+
+![OSTEP book](/IMG_0456.jpg)
